@@ -35,7 +35,7 @@ Este é o diferencial competitivo do Toolkit-29. A pasta `/rule` contém as leis
 ### **Setup Inicial**
 Para habilitar os comandos mestre em qualquer terminal:
 
-- **Mac / Linux:** `./setup-toolkit.sh` && `source ~/.zshrc` (ou `.bashrc`)
+- **Mac / Linux:** `sh setup-toolkit.sh` && `source ~/.zshrc` (ou `.bashrc`)
 - **Windows (PowerShell):** `.\setup-toolkit.ps1`
 
 ### **Comandos de Elite**
