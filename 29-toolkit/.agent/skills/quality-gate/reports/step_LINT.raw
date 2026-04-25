@@ -1,0 +1,4 @@
+
+> fusionone@2.41.33 lint
+> eslint 'src/**/*.{ts,tsx}' --max-warnings 0
+

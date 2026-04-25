@@ -1,0 +1,19 @@
+{
+  "name": "toolkit-29",
+  "version": "1.2.0",
+  "description": "Toolkit-29: Ecossistema de Engenharia de Elite: Scaffolding, Governança e Inteligência Artificial.",
+  "main": "factory/29-engine.js",
+  "bin": {
+    "29-init": "./factory/29-engine.js"
+  },
+  "scripts": {
+    "start": "node factory/29-engine.js"
+  },
+  "author": "29",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

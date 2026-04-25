@@ -1,0 +1,52 @@
+src/modules/csm/pages/accounts/CSMSettingsTab.tsx(62,65): error TS2345: Argument of type 'Partial<ClientStakeholder>' is not assignable to parameter of type 'Omit<ClientStakeholder, "id" | "created_at" | "updated_at">'.
+  Types of property 'name' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+src/modules/csm/pages/accounts/CSMSettingsTab.tsx(63,54): error TS2339: Property 'id' does not exist on type 'string'.
+src/modules/csm/pages/accounts/CSMSettingsTab.tsx(63,87): error TS2339: Property 'id' does not exist on type 'string'.
+src/modules/csm/pages/accounts/CSMSettingsTab.tsx(63,91): error TS2559: Type 'string' has no properties in common with type 'Partial<ClientStakeholder>'.
+src/modules/csm/pages/accounts/DeliveredValue.tsx(69,31): error TS2339: Property 'tenant_id' does not exist on type '{ id?: string | undefined; contract_id?: string | undefined; delivery_date?: string | undefined; manufacturer_name?: string | undefined; value_type?: string | undefined; description?: string | undefined; ... 8 more ...; updated_at?: string | undefined; }'.
+src/modules/csm/pages/accounts/DeliveredValue.tsx(152,17): error TS2322: Type 'string | undefined' is not assignable to type 'string | number'.
+  Type 'undefined' is not assignable to type 'string | number'.
+src/modules/csm/pages/accounts/SuccessPlan.tsx(260,17): error TS2322: Type 'string' is not assignable to type 'ClientContract'.
+src/modules/csm/services/CsmAccountService.ts(191,13): error TS2353: Object literal may only specify known properties, and 'completed_at' does not exist in type 'Partial<DBActionInsert>'.
+src/modules/csm/services/CsmOperationalTaskService.ts(30,13): error TS2322: Type '{ author: string; text: string; date: string; }[]' is not assignable to type 'TaskComment[]'.
+  Type '{ author: string; text: string; date: string; }' is missing the following properties from type 'TaskComment': userName, timestamp
+src/modules/csm/services/CsmOperationalTaskService.ts(87,68): error TS2345: Argument of type '{ tenant_id: string; contract_id: string | undefined; type_id: string | undefined; title: string | undefined; description: string | undefined; status: CSMOperationalStatus | undefined; ... 4 more ...; comments_history: TaskComment[]; }' is not assignable to parameter of type 'Partial<DBOperationalTask>'.
+  Types of property 'comments_history' are incompatible.
+    Type 'TaskComment[]' is not assignable to type '{ author: string; text: string; date: string; }[]'.
+      Type 'TaskComment' is missing the following properties from type '{ author: string; text: string; date: string; }': author, date
+src/modules/csm/services/CsmOperationalTaskService.ts(90,83): error TS2345: Argument of type '{ tenant_id: string; contract_id: string | undefined; type_id: string | undefined; title: string | undefined; description: string | undefined; status: CSMOperationalStatus | undefined; ... 4 more ...; comments_history: TaskComment[]; }' is not assignable to parameter of type 'Partial<DBOperationalTask>'.
+  Types of property 'comments_history' are incompatible.
+    Type 'TaskComment[]' is not assignable to type '{ author: string; text: string; date: string; }[]'.
+      Type 'TaskComment' is missing the following properties from type '{ author: string; text: string; date: string; }': author, date
+src/modules/gcc/components/contracts/ContractModal.tsx(111,45): error TS2345: Argument of type '{ opportunityNumber: string; dueDay: number; monthlyValue: number; value: number; paymentTermDays: number; clientId: string; manufacturerId: string; serviceIds: string[]; periodicity: Periodicity | ""; ... 11 more ...; id?: string; }' is not assignable to parameter of type 'Partial<ClientContract>'.
+  Types of property 'periodicity' are incompatible.
+    Type '"" | Periodicity' is not assignable to type 'Periodicity | undefined'.
+      Type '""' is not assignable to type 'Periodicity | undefined'.
+src/modules/gcc/components/contracts/ContractModal.tsx(202,395): error TS2322: Type '(attId: string) => void' is not assignable to type '(att: ContractAttachment) => void'.
+  Types of parameters 'attId' and 'att' are incompatible.
+    Type 'ContractAttachment' is not assignable to type 'string'.
+src/modules/gcc/hooks/useContractAddendums.ts(39,58): error TS2339: Property 'createAddendum' does not exist on type 'ContractAddendumService'.
+src/modules/gcc/hooks/useContractAddendums.ts(55,58): error TS2339: Property 'updateAddendum' does not exist on type 'ContractAddendumService'.
+src/modules/gcc/hooks/useContractAddendums.ts(71,58): error TS2339: Property 'deleteAddendum' does not exist on type 'ContractAddendumService'.
+src/modules/gcc/services/repositories/SupabaseContractRepository.ts(9,60): error TS2459: Module '"./utils/ContractQueryFilters"' declares 'PostgrestQuery' locally, but it is not exported.
+src/pages/auth/ForgotPassword.tsx(33,48): error TS2339: Property 'automatedReset' does not exist on type 'AuthService'.
+src/tests/auditArchive.test.ts(53,13): error TS2322: Type 'Mock<() => { lt: Mock<() => { limit: Mock<() => Promise<{ data: { id: string; created_at: string; }[]; error: null; }>>; }>; }>' is not assignable to type '<Query extends string = "*", ResultOne = ParseQuery<Query> extends infer ParsedQuery ? ParsedQuery extends Node[] ? ProcessNodesWithoutSchema<ParsedQuery, {}> : ParsedQuery : any>(columns?: Query | undefined, options?: { ...; } | undefined) => PostgrestFilterBuilder<...>'.
+  Type '{ lt: Mock<() => { limit: Mock<() => Promise<{ data: { id: string; created_at: string; }[]; error: null; }>>; }>; }' is missing the following properties from type 'PostgrestFilterBuilder<any, any, any, ResultOne[], string, unknown, "GET">': eq, neq, gt, gte, and 49 more.
+src/tests/auditArchive.test.ts(80,13): error TS2322: Type 'Mock<() => { lt: Mock<() => { limit: Mock<() => Promise<{ data: { id: string; }[]; error: null; }>>; }>; }>' is not assignable to type '<Query extends string = "*", ResultOne = ParseQuery<Query> extends infer ParsedQuery ? ParsedQuery extends Node[] ? ProcessNodesWithoutSchema<ParsedQuery, {}> : ParsedQuery : any>(columns?: Query | undefined, options?: { ...; } | undefined) => PostgrestFilterBuilder<...>'.
+  Type '{ lt: Mock<() => { limit: Mock<() => Promise<{ data: { id: string; }[]; error: null; }>>; }>; }' is missing the following properties from type 'PostgrestFilterBuilder<any, any, any, ResultOne[], string, unknown, "GET">': eq, neq, gt, gte, and 49 more.
+src/tests/authMfaFlow.test.tsx(53,40): error TS2353: Object literal may only specify known properties, and 'verified' does not exist in type '{ all: { id: string; friendly_name?: string | undefined; factor_type: "phone" | "totp" | "webauthn"; status: "verified" | "unverified"; created_at: string; updated_at: string; last_challenged_at?: string | undefined; }[]; } & { ...; }'.
+src/tests/authMfaFlow.test.tsx(85,23): error TS2739: Type '{ id: string; status: "verified"; factor_type: "totp"; }' is missing the following properties from type '{ id: string; friendly_name?: string | undefined; factor_type: "phone" | "totp" | "webauthn"; status: "verified" | "unverified"; created_at: string; updated_at: string; last_challenged_at?: string | undefined; }': created_at, updated_at
+src/tests/authMfaFlow.test.tsx(86,24): error TS2739: Type '{ id: string; status: "verified"; }' is missing the following properties from type '{ id: string; friendly_name?: string | undefined; factor_type: "totp"; status: "verified"; created_at: string; updated_at: string; last_challenged_at?: string | undefined; }': factor_type, created_at, updated_at
+src/tests/clientManagement.test.ts(15,25): error TS2503: Cannot find namespace 'vi'.
+src/tests/clientManagement.test.ts(29,25): error TS2503: Cannot find namespace 'vi'.
+src/tests/clientManagement.test.ts(47,75): error TS2304: Cannot find name 'Client'.
+src/tests/clientManagement.test.ts(82,65): error TS2345: Argument of type '{ clientId: string; expirationDate: string; }[]' is not assignable to parameter of type 'ClientContract[]'.
+  Type '{ clientId: string; expirationDate: string; }' is missing the following properties from type 'ClientContract': id, clientName, manufacturer, service, and 7 more.
+src/tests/clientManagement.test.ts(94,65): error TS2345: Argument of type '{ clientId: string; expirationDate: string; }[]' is not assignable to parameter of type 'ClientContract[]'.
+  Type '{ clientId: string; expirationDate: string; }' is missing the following properties from type 'ClientContract': id, clientName, manufacturer, service, and 7 more.
+src/tests/exportUtils.test.ts(122,95): error TS2554: Expected 1-3 arguments, but got 4.
+src/tests/financeEngine.test.ts(62,27): error TS2554: Expected 2 arguments, but got 0.
+src/tests/financial_logic_unit.test.ts(74,19): error TS2554: Expected 2 arguments, but got 0.
+src/tests/services/ContractAddendumService.test.ts(21,19): error TS2554: Expected 2 arguments, but got 0.

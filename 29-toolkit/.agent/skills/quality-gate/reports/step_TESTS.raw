@@ -1,0 +1,600 @@
+
+> fusionone@2.41.33 test:coverage
+> vitest run --coverage
+
+
+ RUN  v3.2.4 /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone
+      Coverage enabled with v8
+
+ ✓ src/tests/utils/exports/exportCore.test.ts (8 tests) 16ms
+ ✓ src/tests/utils/exports/contractExport.test.ts (5 tests) 13ms
+ ✓ src/tests/utils/exports/auditExport.test.ts (3 tests) 16ms
+ ✓ src/tests/exportUtils.test.ts (6 tests) 18ms
+stderr | src/tests/services/userService.test.ts > UserService > getAll > deve retornar lista vazia e logar erro se o supabase falhar
+[ERROR] Erro ao buscar usuários { message: 'DB Error' } 
+
+ ✓ src/tests/services/healthCheckService.test.ts (6 tests) 19ms
+ ✓ src/tests/services/userService.test.ts (11 tests) 18ms
+stderr | src/tests/services/authService.test.ts > AuthService > login > should return error on invalid credentials
+[ERROR] Login error Error: Invalid login credentials
+    at /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/src/tests/services/authService.test.ts:60:24
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+    at runTest (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8) 
+
+stderr | src/tests/services/authService.test.ts > AuthService > login > should detect zombie session
+[WARN] 🛡️ [Auth] Perfil não encontrado para usuário autenticado (Zombie Session). Forçando logout. 
+
+stdout | src/tests/services/authService.test.ts > AuthService > MFA Required Flow > should return mfaRequired if factors exist but current level is aal1
+[INFO] 🛡️ [Auth] MFA Exigido para usuário: mfa@test.com 
+
+stderr | src/tests/services/authService.test.ts > AuthService > MFA Required Flow > should handle session missing during AAL check
+[WARN] 🛡️ [Auth] Conflito de sessão detectado (aal1 check). Bypass impedido via listener. 
+
+stderr | src/tests/services/authService.test.ts > AuthService > Additional Methods > should get current user with profile
+[WARN] Falha na busca de perfil corrente { code: 'PGRST116' }
+
+stderr | src/tests/services/authService.test.ts > AuthService > Error Messaging > should handle connection errors
+[ERROR] Login error Error: Failed to fetch
+    at /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/src/tests/services/authService.test.ts:323:73
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+    at runTest (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8) 
+
+stderr | src/tests/services/authService.test.ts > AuthService > Error Messaging > should handle rate limit errors
+[ERROR] Login error Error: rate limit reached
+    at /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/src/tests/services/authService.test.ts:329:73
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+    at runTest (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8) 
+
+stderr | src/tests/services/authService.test.ts > AuthService > Error Messaging > should handle critical server errors 5xx
+[ERROR] Login error { status: 500, message: 'Internal Server Error' } 
+
+ ✓ src/tests/services/authService.test.ts (27 tests) 30ms
+ ✓ src/tests/hooks/useDashboardMetrics.test.tsx (2 tests) 119ms
+ ✓ src/tests/hooks/useContractsQuery.test.tsx (3 tests) 120ms
+ ✓ src/tests/components/HealthOverlay.test.tsx (3 tests) 130ms
+stderr | src/tests/smoke.test.ts > Smoke Tests - System Reliability > should connect to Supabase and query health (time)
+RPC get_server_time failed, falling back to simple select
+
+ ✓ src/tests/authMfaFlow.test.tsx (3 tests) 175ms
+ ✓ src/tests/smoke.test.ts (3 tests) 861ms
+   ✓ Smoke Tests - System Reliability > should connect to Supabase and query health (time)  552ms
+   ✓ Smoke Tests - System Reliability > should have public bucket configuration safe (Client Check)  308ms
+ ✓ src/tests/security/isolation.test.ts (6 tests) 1224ms
+   ✓ Security: Multi-tenant Isolation (Leak Tests) > Unauthenticated Access (Public) > should NOT leak contracts to unauthenticated users  419ms
+   ✓ Security: Multi-tenant Isolation (Leak Tests) > Unauthenticated Access (Public) > should NOT leak clients to unauthenticated users  371ms
+ ✓ src/tests/utils/masks.test.ts (4 tests) 11ms
+stderr | src/tests/services/tenantService.test.ts > TenantService > sendTestGovernanceEmail > deve lançar erro se a edge function falhar
+[ERROR] Erro ao enviar e-mail de teste Error: Invokation Fail
+    at /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/src/tests/services/tenantService.test.ts:117:77
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+    at runTest (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8) 
+
+stderr | src/tests/services/tenantService.test.ts > TenantService > getSettings errors > deve relançar erro do supabase
+[ERROR] Erro ao buscar configurações do tenant Error: DB Fail
+    at /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/src/tests/services/tenantService.test.ts:135:77
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+    at runTest (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8) 
+
+stderr | src/tests/services/tenantService.test.ts > TenantService > updateSettings errors > deve relançar erro do supabase
+[ERROR] Erro ao atualizar configurações do tenant Error: Upsert Fail
+    at /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/src/tests/services/tenantService.test.ts:144:60
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+    at runTest (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8) 
+
+stdout | src/tests/auditArchive.test.ts > AuditArchiveService > deve retornar zero se não encontrar logs antigos
+[INFO] Iniciando manutenção de logs de auditoria (Cold Storage Archiving) 
+
+stdout | src/tests/auditArchive.test.ts > AuditArchiveService > deve retornar zero se não encontrar logs antigos
+[INFO] Nenhum log antigo encontrado para arquivamento. 
+
+stdout | src/tests/auditArchive.test.ts > AuditArchiveService > NÃO deve deletar logs se o upload para o storage falhar
+[INFO] Iniciando manutenção de logs de auditoria (Cold Storage Archiving) 
+
+stderr | src/tests/auditArchive.test.ts > AuditArchiveService > NÃO deve deletar logs se o upload para o storage falhar
+[ERROR] Falha crítica na manutenção de auditoria Error: Upload Fail
+    at /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/src/tests/auditArchive.test.ts:66:71
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:155:11
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:752:26
+    at file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1897:20
+    at new Promise (<anonymous>)
+    at runWithTimeout (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1863:10)
+    at runTest (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1574:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8)
+    at runSuite (file:///Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/node_modules/@vitest/runner/dist/chunk-hooks.js:1729:8) 
+
+stdout | src/tests/auditArchive.test.ts > AuditArchiveService > deve deletar logs apenas se o upload for bem sucedido
+[INFO] Iniciando manutenção de logs de auditoria (Cold Storage Archiving) 
+
+stdout | src/tests/auditArchive.test.ts > AuditArchiveService > deve deletar logs apenas se o upload for bem sucedido
+[INFO] Backup concluído: archive_2026-04-25T14-39-55-897Z_2_records.json. Iniciando purga segura... 
+
+stdout | src/tests/auditArchive.test.ts > AuditArchiveService > deve deletar logs apenas se o upload for bem sucedido
+[INFO] Manutenção concluída com sucesso. 2 registros purgados. 
+
+ ✓ src/tests/services/tenantService.test.ts (10 tests) 11ms
+ ✓ src/tests/auditArchive.test.ts (3 tests) 8ms
+ ✓ src/tests/services/ProfileService.test.ts (7 tests) 4ms
+stderr | src/tests/services/AuditLogService.test.ts > AuditLogService > getLogs > should return empty list on supabase error
+[ERROR] Falha ao buscar logs de auditoria { message: 'DB Error' } 
+
+stderr | src/tests/services/AuditLogService.test.ts > AuditLogService > getLogs > should handle failures in log mapping gracefully
+[WARN] Erro ao mapear registro de log de auditoria {}
+
+stderr | src/tests/services/AuditLogService.test.ts > AuditLogService > log > should log error if insert fails
+[ERROR] Falha ao salvar log de auditoria { message: 'Insert Fail', details: undefined } 
+
+ ✓ src/tests/services/ContractAddendumService.test.ts (5 tests) 6ms
+ ✓ src/tests/services/AuditLogService.test.ts (11 tests) 6ms
+ ✓ src/tests/services/ContractService.test.ts (12 tests) 5ms
+ ✓ src/tests/storageService.test.ts (8 tests) 4ms
+ ✓ src/tests/financeEngine.test.ts (4 tests) 3ms
+ ✓ src/tests/services/catalogService.test.ts (9 tests) 5ms
+ ✓ src/tests/services/rpcService.test.ts (10 tests) 5ms
+ ✓ src/tests/clientManagement.test.ts (4 tests) 4ms
+stdout | src/tests/logSanitizer.test.ts > Log Sanitizer > logger > should log safely without throwing
+[INFO] Test { email: 't*****@example.com', password: '********' }
+[DEBUG] Test { email: 't*****@example.com', password: '********' }
+
+stderr | src/tests/logSanitizer.test.ts > Log Sanitizer > logger > should log safely without throwing
+[WARN] Test { email: 't*****@example.com', password: '********' }
+[ERROR] Test { email: 'test@example.com', password: 'secret' } 
+
+ ✓ src/tests/logSanitizer.test.ts (19 tests) 5ms
+ ✓ src/tests/sentry.test.ts (7 tests) 4ms
+ ✓ src/tests/utils/exports/clientExport.test.ts (2 tests) 3ms
+ ✓ src/tests/utils/alertService.test.ts (3 tests) 4ms
+ ✓ src/tests/utils/logSanitizer.test.ts (10 tests) 3ms
+ ✓ src/tests/services/diagnosticService.test.ts (2 tests) 4ms
+ ✓ src/tests/financial_logic_unit.test.ts (1 test) 3ms
+ ✓ src/tests/services/categoryService.test.ts (9 tests) 4ms
+ ✓ src/tests/utils/formatters.test.ts (4 tests) 2ms
+stderr | src/tests/lib/ratelimit.test.ts
+[RateLimit] 🛡️ Habilitado (Fallback em Memória Local)
+
+ ✓ src/tests/contractUtils.test.ts (14 tests) 3ms
+ ✓ src/tests/lib/ratelimit.test.ts (4 tests) 3ms
+ ✓ src/tests/unit/schemas.test.ts (4 tests) 3ms
+ ✓ src/tests/clientUtils.test.ts (7 tests) 2ms
+ ✓ src/tests/utils/validation.test.ts (4 tests) 2ms
+ ✓ src/tests/utils/dateUtils.test.ts (4 tests) 2ms
+ ✓ src/tests/unit/permissions.test.ts (6 tests) 2ms
+ ✓ src/tests/ratelimit.test.ts (6 tests) 2ms
+ ✓ src/tests/utils/audit.test.ts (1 test) 2ms
+ ✓ src/tests/authUtils.test.ts (7 tests) 2ms
+ ✓ src/tests/ui-capability.test.tsx (1 test) 2ms
+
+ Test Files  45 passed (45)
+      Tests  288 passed (288)
+   Start at  11:39:50
+   Duration  9.91s (transform 832ms, setup 11.00s, collect 6.95s, tests 2.88s, environment 72.20s, prepare 5.08s)
+
+ % Coverage report from v8
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   10.03 |    70.23 |   58.42 |   10.03 |                   
+ src               |       0 |       50 |      50 |       0 |                   
+  App.tsx          |       0 |      100 |     100 |       0 | 2-212             
+  index.tsx        |       0 |        0 |       0 |       0 | 1-23              
+ src/components    |       0 |      100 |     100 |       0 |                   
+  ...rBoundary.tsx |       0 |      100 |     100 |       0 | 11-121            
+ ...ponents/common |      61 |       50 |   77.77 |      61 |                   
+  ...thOverlay.tsx |   96.37 |    48.71 |   83.33 |   96.37 | 113,129,134-136   
+  LucideIcon.tsx   |       0 |      100 |     100 |       0 | 2-71              
+  ...uirements.tsx |       0 |      100 |     100 |       0 | 2-43              
+  ...rmCleaner.tsx |       0 |        0 |       0 |       0 | 1-28              
+ ...mon/Monitoring |       0 |      100 |     100 |       0 |                   
+  ...gProvider.tsx |       0 |      100 |     100 |       0 | 2-27              
+ ...common/Privacy |       0 |        0 |       0 |       0 |                   
+  ...ieConsent.tsx |       0 |        0 |       0 |       0 | 1-104             
+ ...ts/diagnostics |       0 |        0 |       0 |       0 |                   
+  ...sticPanel.tsx |       0 |        0 |       0 |       0 | 1-168             
+ .../features/auth |       0 |       50 |      50 |       0 |                   
+  ...etupModal.tsx |       0 |      100 |     100 |       0 | 2-243             
+  ...rifyModal.tsx |       0 |        0 |       0 |       0 | 1-105             
+ ...ures/dashboard |       0 |    22.22 |   22.22 |       0 |                   
+  ...tionChart.tsx |       0 |        0 |       0 |       0 | 1-154             
+  ...tionChart.tsx |       0 |        0 |       0 |       0 | 1-154             
+  ...tionChart.tsx |       0 |        0 |       0 |       0 | 1-154             
+  ...onsWidget.tsx |       0 |      100 |     100 |       0 | 2-41              
+  RevenueChart.tsx |       0 |        0 |       0 |       0 | 1-73              
+  ...rtContent.tsx |       0 |      100 |     100 |       0 | 2-204             
+  ...ailsModal.tsx |       0 |        0 |       0 |       0 | 1-102             
+  ...ntsWidget.tsx |       0 |        0 |       0 |       0 | 1-55              
+  ...herWidget.tsx |       0 |        0 |       0 |       0 | 1-236             
+ ...res/management |       0 |       50 |      50 |       0 |                   
+  ...balConfig.tsx |       0 |      100 |     100 |       0 | 4-24              
+  ...tSettings.tsx |       0 |        0 |       0 |       0 | 1-362             
+  ...turersTab.tsx |       0 |        0 |       0 |       0 | 1-208             
+  ServicesTab.tsx  |       0 |        0 |       0 |       0 | 1-314             
+  ...nTypesTab.tsx |       0 |      100 |     100 |       0 | 2-300             
+  ...dencesTab.tsx |       0 |        0 |       0 |       0 | 1-299             
+  ...ctivesTab.tsx |       0 |      100 |     100 |       0 | 2-298             
+  UsersTab.tsx     |       0 |      100 |     100 |       0 | 2-298             
+ ...management/csm |       0 |        0 |       0 |       0 |                   
+  ...ConfigTab.tsx |       0 |        0 |       0 |       0 | 1-212             
+  ...ConfigTab.tsx |       0 |        0 |       0 |       0 | 1-133             
+  ...ConfigTab.tsx |       0 |        0 |       0 |       0 | 1-259             
+  ...ConfigTab.tsx |       0 |        0 |       0 |       0 | 1-171             
+  ...ConfigTab.tsx |       0 |        0 |       0 |       0 | 1-277             
+ .../manufacturers |       0 |        0 |       0 |       0 |                   
+  ...urerModal.tsx |       0 |        0 |       0 |       0 | 1-133             
+ ...tures/services |       0 |        0 |       0 |       0 |                   
+  ServiceModal.tsx |       0 |        0 |       0 |       0 | 1-151             
+ ...features/users |       0 |      100 |     100 |       0 |                   
+  ...trixModal.tsx |       0 |      100 |     100 |       0 | 2-143             
+  UserModal.tsx    |       0 |      100 |     100 |       0 | 3-154             
+ ...ers/components |       0 |      100 |     100 |       0 |                   
+  ...essFields.tsx |       0 |      100 |     100 |       0 | 2-127             
+  ...ileFields.tsx |       0 |      100 |     100 |       0 | 2-63              
+  ...tySection.tsx |       0 |      100 |     100 |       0 | 2-169             
+ ...es/users/hooks |       0 |        0 |       0 |       0 |                   
+  useUserForm.ts   |       0 |        0 |       0 |       0 | 1-159             
+ ...ponents/layout |       0 |    66.66 |   66.66 |       0 |                   
+  Header.tsx       |       0 |      100 |     100 |       0 | 7-109             
+  InfoLayout.tsx   |       0 |      100 |     100 |       0 | 11-32             
+  MainLayout.tsx   |       0 |      100 |     100 |       0 | 2-31              
+  ...ationBell.tsx |       0 |      100 |     100 |       0 | 2-129             
+  Sidebar.tsx      |       0 |        0 |       0 |       0 | 1-191             
+  SidebarItem.tsx  |       0 |        0 |       0 |       0 | 1-128             
+ src/components/ui |    0.31 |    51.72 |   53.57 |    0.31 |                   
+  AlertModal.tsx   |       0 |      100 |     100 |       0 | 2-114             
+  ...viewModal.tsx |       0 |        0 |       0 |       0 | 1-225             
+  ...ensityMap.tsx |       0 |      100 |     100 |       0 | 2-454             
+  Button.tsx       |       0 |      100 |     100 |       0 | 2-60              
+  Card.tsx         |       0 |      100 |     100 |       0 | 2-36              
+  ...agerModal.tsx |       0 |        0 |       0 |       0 | 1-252             
+  CommandGlobe.tsx |       0 |        0 |       0 |       0 | 1-83              
+  ...tionModal.tsx |       0 |      100 |     100 |       0 | 2-104             
+  ContextHelp.tsx  |       0 |      100 |     100 |       0 | 2-50              
+  ...tionModal.tsx |       0 |        0 |       0 |       0 | 1-118             
+  ...rBoundary.tsx |       0 |        0 |       0 |       0 | 1-89              
+  ...tionModal.tsx |       0 |        0 |       0 |       0 | 1-112             
+  Input.tsx        |       0 |        0 |       0 |       0 | 1-59              
+  ...lmentGrid.tsx |       0 |        0 |       0 |       0 | 1-157             
+  ...ngSpinner.tsx |     100 |      100 |     100 |     100 |                   
+  ...tionModal.tsx |       0 |      100 |     100 |       0 | 2-62              
+  Modal.tsx        |       0 |        0 |       0 |       0 | 1-110             
+  ...atusBadge.tsx |       0 |      100 |     100 |       0 | 2-64              
+  Portal.tsx       |       0 |        0 |       0 |       0 | 1-25              
+  ...angeModal.tsx |    7.89 |       50 |     100 |    7.89 | 13-60             
+  ...leteModal.tsx |       0 |        0 |       0 |       0 | 1-234             
+  Select.tsx       |       0 |        0 |       0 |       0 | 1-39              
+  ...iredModal.tsx |       0 |      100 |     100 |       0 | 2-45              
+  StatsCard.tsx    |       0 |      100 |     100 |       0 | 7-89              
+  StatusBadge.tsx  |       0 |      100 |     100 |       0 | 2-73              
+  Switch.tsx       |       0 |      100 |     100 |       0 | 2-38              
+  Tooltip.tsx      |       0 |        0 |       0 |       0 | 1-81              
+  ...InfoModal.tsx |       0 |      100 |     100 |       0 | 2-96              
+ src/config        |   87.41 |    77.77 |      40 |   87.41 |                   
+  ...ons.config.ts |   87.41 |    77.77 |      40 |   87.41 | ...90-193,196-199 
+ src/constants     |     100 |      100 |     100 |     100 |                   
+  legal.ts         |     100 |      100 |     100 |     100 |                   
+ src/context       |      12 |    75.86 |   69.23 |      12 |                   
+  AppContext.tsx   |       0 |      100 |     100 |       0 | 2-37              
+  AppProviders.tsx |       0 |      100 |     100 |       0 | 2-99              
+  AuthContext.tsx  |    44.9 |    68.18 |   33.33 |    44.9 | ...27-247,251-256 
+  ...ntextCore.tsx |     100 |      100 |     100 |     100 |                   
+  ...ryContext.tsx |       0 |      100 |     100 |       0 | 2-106             
+  ...ntContext.tsx |       0 |      100 |     100 |       0 | 2-131             
+  ...ctContext.tsx |       0 |      100 |     100 |       0 | 2-172             
+  ...ceContext.tsx |       0 |      100 |     100 |       0 | 2-239             
+  UserContext.tsx  |       0 |      100 |     100 |       0 | 2-124             
+ src/context/hooks |   46.42 |    73.33 |   33.33 |   46.42 |                   
+  useIdleTimer.ts  |   58.33 |      100 |      25 |   58.33 | 14-15,18-27,33-36 
+  ...rofileSync.ts |   40.78 |    55.55 |      50 |   40.78 | 34-67,72-90       
+ src/hooks         |   15.54 |    41.37 |   58.33 |   15.54 |                   
+  useAuth.ts       |     100 |       50 |     100 |     100 | 6                 
+  useCadences.ts   |       0 |      100 |     100 |       0 | 2-112             
+  ...ardMetrics.ts |    96.1 |    38.88 |     100 |    96.1 | 28-30             
+  useDebounce.ts   |       0 |        0 |       0 |       0 | 1-23              
+  ...ateActions.ts |       0 |        0 |       0 |       0 | 1-86              
+  ...Visibility.ts |       0 |        0 |       0 |       0 | 1-25              
+  ...leColumns.tsx |       0 |        0 |       0 |       0 | 1-64              
+  ...nueHistory.ts |       0 |      100 |     100 |       0 | 2-37              
+  ...Objectives.ts |       0 |      100 |     100 |       0 | 2-98              
+  ...ctionTypes.ts |       0 |      100 |     100 |       0 | 2-98              
+  useUsers.ts      |       0 |        0 |       0 |       0 | 1-10              
+ src/hooks/queries |       0 |        0 |       0 |       0 |                   
+  useUsersQuery.ts |       0 |        0 |       0 |       0 | 1-113             
+ src/lib           |   40.81 |    73.91 |    64.7 |   40.81 |                   
+  ...rkRecovery.ts |   31.94 |      100 |   33.33 |   31.94 | ...72,75-86,92-98 
+  ratelimit.ts     |   96.87 |    83.33 |     100 |   96.87 | 53                
+  sentry.ts        |   39.42 |    69.23 |   83.33 |   39.42 | 28-122            
+  supabase.ts      |       0 |        0 |       0 |       0 | 1-35              
+  utils.ts         |     100 |      100 |     100 |     100 |                   
+ ...min/components |       0 |       80 |      80 |       0 |                   
+  ActionBadge.tsx  |       0 |      100 |     100 |       0 | 2-35              
+  AuditToolbar.tsx |       0 |      100 |     100 |       0 | 2-133             
+  ...ySentinel.tsx |       0 |        0 |       0 |       0 | 1-198             
+  ...tailModal.tsx |       0 |      100 |     100 |       0 | 2-149             
+  ...oardItems.tsx |       0 |      100 |     100 |       0 | 2-135             
+ ...ents/evaluator |       0 |      100 |     100 |       0 |                   
+  ...Dashboard.tsx |       0 |      100 |     100 |       0 | 2-315             
+  ...StatusBar.tsx |       0 |      100 |     100 |       0 | 2-53              
+  ...ploadZone.tsx |       0 |      100 |     100 |       0 | 2-97              
+  ...uditModal.tsx |       0 |      100 |     100 |       0 | 2-145             
+ ...es/admin/hooks |       0 |        0 |       0 |       0 |                   
+  useAuditLogs.ts  |       0 |        0 |       0 |       0 | 1-115             
+  ...eIntegrity.ts |       0 |        0 |       0 |       0 | 1-72              
+  useEvaluator.ts  |       0 |        0 |       0 |       0 | 1-189             
+  ...nelMetrics.ts |       0 |        0 |       0 |       0 | 1-49              
+  ...stemHealth.ts |       0 |        0 |       0 |       0 | 1-27              
+ ...es/admin/pages |       0 |        0 |       0 |       0 |                   
+  ...storyPage.tsx |       0 |        0 |       0 |       0 | 1-163             
+  ...ementPage.tsx |       0 |        0 |       0 |       0 | 1-224             
+  ...tatusPage.tsx |       0 |        0 |       0 |       0 | 1-319             
+ ...ages/evaluator |       0 |       50 |      50 |       0 |                   
+  ContractChat.tsx |       0 |      100 |     100 |       0 | 9-247             
+  ...uatorPage.tsx |       0 |        0 |       0 |       0 | 1-174             
+ ...admin/services |       0 |        0 |       0 |       0 |                   
+  ...torService.ts |       0 |        0 |       0 |       0 | 1-147             
+  ...nelService.ts |       0 |        0 |       0 |       0 | 1-127             
+ ...es/admin/types |       0 |        0 |       0 |       0 |                   
+  ...uatorTypes.ts |       0 |        0 |       0 |       0 |                   
+  SentinelTypes.ts |       0 |        0 |       0 |       0 |                   
+ ...nents/accounts |       0 |       50 |      50 |       0 |                   
+  ...ValueForm.tsx |       0 |        0 |       0 |       0 | 1-232             
+  ...ValueList.tsx |       0 |      100 |     100 |       0 | 2-109             
+  ...ctionForm.tsx |       0 |        0 |       0 |       0 | 1-250             
+  ...ctionList.tsx |       0 |      100 |     100 |       0 | 2-137             
+ ...ents/dashboard |       0 |      100 |     100 |       0 |                   
+  ...actsModal.tsx |       0 |      100 |     100 |       0 | 3-115             
+  ...tionChart.tsx |       0 |      100 |     100 |       0 | 2-147             
+  ...Snapshots.tsx |       0 |      100 |     100 |       0 | 10-36             
+  ...TermModal.tsx |       0 |      100 |     100 |       0 | 2-116             
+  CSMMRRModal.tsx  |       0 |      100 |     100 |       0 | 2-117             
+  CSMRiskRadar.tsx |       0 |      100 |     100 |       0 | 3-134             
+ ...nts/evaluation |       0 |      100 |     100 |       0 |                   
+  ...ensionRow.tsx |       0 |      100 |     100 |       0 | 2-117             
+  ...onHistory.tsx |       0 |      100 |     100 |       0 | 2-108             
+  ...ScoreCard.tsx |       0 |      100 |     100 |       0 | 2-125             
+  RadarChart.tsx   |       0 |      100 |     100 |       0 | 2-91              
+ ...ponents/kanban |       0 |        0 |       0 |       0 |                   
+  KanbanColumn.tsx |       0 |        0 |       0 |       0 | 1-64              
+  TaskCard.tsx     |       0 |        0 |       0 |       0 | 1-91              
+  ...ModalForm.tsx |       0 |        0 |       0 |       0 | 1-288             
+  constants.ts     |       0 |        0 |       0 |       0 | 1-14              
+ ...nents/settings |       0 |       75 |      75 |       0 |                   
+  ...sticPanel.tsx |       0 |      100 |     100 |       0 | 21-77             
+  ...entMatrix.tsx |       0 |      100 |     100 |       0 | 2-84              
+  ...rtTracker.tsx |       0 |      100 |     100 |       0 | 2-88              
+  ...erManager.tsx |       0 |        0 |       0 |       0 | 1-218             
+ ...s/success-plan |       0 |      100 |     100 |       0 |                   
+  ...nifiedRow.tsx |       0 |      100 |     100 |       0 | 2-148             
+  ...ionsAlert.tsx |       0 |      100 |     100 |       0 | 2-65              
+  ...gySection.tsx |       0 |      100 |     100 |       0 | 2-215             
+  ...lanHeader.tsx |       0 |      100 |     100 |       0 | 2-48              
+ ...onents/summary |       0 |       75 |      75 |       0 |                   
+  ...tionChart.tsx |       0 |        0 |       0 |       0 | 1-74              
+  ...ryDetails.tsx |       0 |      100 |     100 |       0 | 2-74              
+  ...anceCards.tsx |       0 |      100 |     100 |       0 | 2-58              
+  ...althRadar.tsx |       0 |      100 |     100 |       0 | 2-77              
+ ...les/csm/domain |       0 |        0 |       0 |       0 |                   
+  maturityLogic.ts |       0 |        0 |       0 |       0 | 1-80              
+ ...ules/csm/hooks |       0 |    18.75 |   18.75 |       0 |                   
+  useActions.ts    |       0 |        0 |       0 |       0 | 1-83              
+  ...ditConfigs.ts |       0 |        0 |       0 |       0 | 1-75              
+  ...lContracts.ts |       0 |        0 |       0 |       0 | 1-31              
+  ...ardMetrics.ts |       0 |      100 |     100 |       0 | 2-98              
+  ...mContracts.ts |       0 |        0 |       0 |       0 | 1-31              
+  ...RContracts.ts |       0 |        0 |       0 |       0 | 1-32              
+  ...veredValue.ts |       0 |      100 |     100 |       0 | 2-99              
+  ...Categories.ts |       0 |      100 |     100 |       0 | 2-38              
+  ...pactLevels.ts |       0 |        0 |       0 |       0 | 1-39              
+  ...ealthScore.ts |       0 |        0 |       0 |       0 | 1-29              
+  ...ionalTasks.ts |       0 |        0 |       0 |       0 | 1-143             
+  ...tisfaction.ts |       0 |        0 |       0 |       0 | 1-70              
+  ...tionParams.ts |       0 |        0 |       0 |       0 | 1-46              
+  ...lderAlerts.ts |       0 |        0 |       0 |       0 | 1-141             
+  ...akeholders.ts |       0 |        0 |       0 |       0 | 1-82              
+  useStrategies.ts |       0 |        0 |       0 |       0 | 1-89              
+ .../hooks/queries |       0 |        0 |       0 |       0 |                   
+  useCSMQueries.ts |       0 |        0 |       0 |       0 | 1-199             
+ ...ules/csm/pages |       0 |      100 |     100 |       0 |                   
+  CSMDashboard.tsx |       0 |      100 |     100 |       0 | 2-288             
+  CSMReports.tsx   |       0 |      100 |     100 |       0 | 2-43              
+ ...pages/accounts |       0 |    22.22 |   22.22 |       0 |                   
+  ...ntsLayout.tsx |       0 |      100 |     100 |       0 | 2-192             
+  ...ttingsTab.tsx |       0 |        0 |       0 |       0 | 1-105             
+  ...ctSummary.tsx |       0 |        0 |       0 |       0 | 1-88              
+  ...eredValue.tsx |       0 |        0 |       0 |       0 | 1-168             
+  HealthScore.tsx  |       0 |      100 |     100 |       0 | 2-358             
+  ...ionalPlan.tsx |       0 |        0 |       0 |       0 | 1-314             
+  Satisfaction.tsx |       0 |        0 |       0 |       0 | 1-126             
+  SuccessPlan.tsx  |       0 |        0 |       0 |       0 | 1-322             
+  ...valuation.tsx |       0 |        0 |       0 |       0 | 1-462             
+ ...ccounts/modals |       0 |       75 |      75 |       0 |                   
+  ActionModal.tsx  |       0 |      100 |     100 |       0 | 2-185             
+  ...shotModal.tsx |       0 |      100 |     100 |       0 | 2-176             
+  MeetingModal.tsx |       0 |      100 |     100 |       0 | 2-227             
+  ...tegyModal.tsx |       0 |        0 |       0 |       0 | 1-179             
+ ...m/repositories |       0 |        0 |       0 |       0 |                   
+  ...Repository.ts |       0 |        0 |       0 |       0 | 1-138             
+  ...Repository.ts |       0 |        0 |       0 |       0 | 1-139             
+  ...Repository.ts |       0 |        0 |       0 |       0 | 1-179             
+  ...Repository.ts |       0 |        0 |       0 |       0 | 1-46              
+ ...s/csm/services |       0 |        0 |       0 |       0 |                   
+  ...untService.ts |       0 |        0 |       0 |       0 | 1-252             
+  ...lueService.ts |       0 |        0 |       0 |       0 | 1-31              
+  ...oreService.ts |       0 |        0 |       0 |       0 | 1-11              
+  ...askService.ts |       0 |        0 |       0 |       0 | 1-139             
+  ...ionService.ts |       0 |        0 |       0 |       0 | 1-26              
+  ...derService.ts |       0 |        0 |       0 |       0 | 1-40              
+  configService.ts |       0 |        0 |       0 |       0 | 1-129             
+ ...ules/csm/utils |       0 |        0 |       0 |       0 |                   
+  ...sPlanUtils.ts |       0 |        0 |       0 |       0 | 1-68              
+ ...onents/clients |       0 |    33.33 |   33.33 |       0 |                   
+  ...actsModal.tsx |       0 |      100 |     100 |       0 | 2-113             
+  ClientModal.tsx  |       0 |        0 |       0 |       0 | 1-328             
+  ClientRow.tsx    |       0 |        0 |       0 |       0 | 1-105             
+ ...ents/contracts |       0 |       75 |      75 |       0 |                   
+  ...dumSubRow.tsx |       0 |      100 |     100 |       0 | 2-109             
+  ...neageCard.tsx |       0 |      100 |     100 |       0 | 2-138             
+  ...ractModal.tsx |       0 |        0 |       0 |       0 | 1-233             
+  ...ViewModal.tsx |       0 |        0 |       0 |       0 | 1-340             
+  ContractRow.tsx  |       0 |      100 |     100 |       0 | 2-333             
+  ...ractTable.tsx |       0 |      100 |     100 |       0 | 2-201             
+  ...viewModal.tsx |       0 |      100 |     100 |       0 | 2-257             
+  ...ailsModal.tsx |       0 |      100 |     100 |       0 | 2-228             
+ ...acts/addendums |       0 |       50 |      50 |       0 |                   
+  AddendumForm.tsx |       0 |      100 |     100 |       0 | 2-258             
+  AddendumList.tsx |       0 |        0 |       0 |       0 | 1-174             
+ ...contracts/tabs |       0 |      100 |     100 |       0 |                   
+  ...hmentsTab.tsx |       0 |      100 |     100 |       0 | 2-138             
+  ...ncialsTab.tsx |       0 |      100 |     100 |       0 | 3-226             
+  ...eneralTab.tsx |       0 |      100 |     100 |       0 | 4-165             
+ ...onents/reports |       0 |      100 |     100 |       0 |                   
+  ...enueModal.tsx |       0 |      100 |     100 |       0 | 2-90              
+  ...rtFilters.tsx |       0 |      100 |     100 |       0 | 2-55              
+  ...portTable.tsx |       0 |      100 |     100 |       0 | 2-181             
+  ...tTypeCard.tsx |       0 |      100 |     100 |       0 | 2-44              
+ ...ules/gcc/hooks |       0 |        0 |       0 |       0 |                   
+  ...tAddendums.ts |       0 |        0 |       0 |       0 | 1-93              
+  ...tractFiles.ts |       0 |        0 |       0 |       0 | 1-119             
+  ...tractLogic.ts |       0 |        0 |       0 |       0 | 1-226             
+  ...ctWorkflow.ts |       0 |        0 |       0 |       0 | 1-101             
+  useCrudPage.ts   |       0 |        0 |       0 |       0 | 1-53              
+  ...ompanyData.ts |       0 |        0 |       0 |       0 | 1-49              
+  ...mentReport.ts |       0 |        0 |       0 |       0 | 1-142             
+  ...eportsData.ts |       0 |        0 |       0 |       0 | 1-149             
+ .../hooks/queries |   15.76 |    61.53 |   33.33 |   15.76 |                   
+  ...egoryQuery.ts |       0 |        0 |       0 |       0 | 1-46              
+  ...ientsQuery.ts |       0 |        0 |       0 |       0 | 1-82              
+  ...ractsQuery.ts |   39.88 |       80 |      40 |   39.88 | ...41-165,168-190 
+  ...urcesQuery.ts |       0 |        0 |       0 |       0 | 1-169             
+ ...ules/gcc/pages |       0 |       80 |      80 |       0 |                   
+  Clients.tsx      |       0 |      100 |     100 |       0 | 2-343             
+  Contracts.tsx    |       0 |        0 |       0 |       0 | 1-290             
+  GCCDashboard.tsx |       0 |      100 |     100 |       0 | 2-281             
+  ...tusReport.tsx |       0 |      100 |     100 |       0 | 2-94              
+  Reports.tsx      |       0 |      100 |     100 |       0 | 2-251             
+ ...s/gcc/services |    57.1 |    71.77 |   67.92 |    57.1 |                   
+  ...dumService.ts |   67.85 |    56.25 |      60 |   67.85 | ...58-169,176-181 
+  ...ortService.ts |       0 |        0 |       0 |       0 | 1-91              
+  ...logService.ts |   73.52 |    70.83 |      75 |   73.52 | ...9,76-78,92,112 
+  ...oryService.ts |   91.11 |    76.47 |     100 |   91.11 | 22-23,58-59       
+  clientService.ts |    52.8 |      100 |   44.44 |    52.8 | ...05-106,109-110 
+  ...actService.ts |   76.39 |    72.54 |    92.3 |   76.39 | ...12-142,150-160 
+  ...rerService.ts |       0 |        0 |       0 |       0 | 1-116             
+  ...ageService.ts |   76.47 |     87.5 |      40 |   76.47 | ...96-114,120-121 
+ ...vices/external |       0 |      100 |     100 |       0 |                   
+  ...ApiService.ts |       0 |      100 |     100 |       0 | 2-63              
+ ...s/repositories |   31.21 |    39.28 |   21.56 |   31.21 |                   
+  ...Repository.ts |   97.82 |    33.33 |     100 |   97.82 | 108-109           
+  ...Repository.ts |   16.07 |      100 |       0 |   16.07 | ...42,45-56,59-67 
+  ...Repository.ts |   16.07 |      100 |       0 |   16.07 | ...42,45-56,59-67 
+  ...Repository.ts |   12.72 |      100 |       0 |   12.72 | ...99-113,116-128 
+  ...Repository.ts |   23.13 |       60 |   17.64 |   23.13 | ...12-122,129-157 
+  ...Repository.ts |       0 |        0 |       0 |       0 | 1-68              
+  ...Repository.ts |   38.09 |       50 |   28.57 |   38.09 | ...54,57-67,70-78 
+ ...sitories/utils |   32.51 |    11.11 |      20 |   32.51 |                   
+  ...ractMapper.ts |   48.95 |    11.11 |   33.33 |   48.95 | ...2,80-88,91-123 
+  ...eryFilters.ts |    8.95 |      100 |       0 |    8.95 | 32-52,55-103      
+ ...ules/gcc/utils |       0 |       50 |      50 |       0 |                   
+  ...ermissions.ts |       0 |        0 |       0 |       0 | 1-84              
+  segmentUtils.ts  |       0 |      100 |     100 |       0 | 6-79              
+ src/pages         |       0 |        0 |       0 |       0 |                   
+  GlobalHub.tsx    |       0 |        0 |       0 |       0 | 1-105             
+ src/pages/auth    |       0 |    83.33 |   83.33 |       0 |                   
+  ...tPassword.tsx |       0 |      100 |     100 |       0 | 2-149             
+  Login.tsx        |       0 |      100 |     100 |       0 | 2-231             
+  MFASetup.tsx     |       0 |        0 |       0 |       0 | 1-279             
+  ...ingAccess.tsx |       0 |      100 |     100 |       0 | 2-74              
+  Register.tsx     |       0 |      100 |     100 |       0 | 2-258             
+  ...tPassword.tsx |       0 |      100 |     100 |       0 | 2-278             
+ src/pages/legal   |       0 |        0 |       0 |       0 |                   
+  ...acyPolicy.tsx |       0 |        0 |       0 |       0 | 1-285             
+  TermsOfUse.tsx   |       0 |        0 |       0 |       0 | 1-244             
+ src/schemas       |   55.76 |       75 |      75 |   55.76 |                   
+  authSchemas.ts   |     100 |      100 |     100 |     100 |                   
+  ...ionSchemas.ts |       0 |        0 |       0 |       0 | 1-31              
+ src/services      |   91.19 |    81.08 |   96.15 |   91.19 |                   
+  ...iveService.ts |   80.24 |       70 |   66.66 |   80.24 | 55-56,100-116     
+  ...LogService.ts |   89.78 |     81.7 |     100 |   89.78 | ...14,171,202-203 
+  ...tedService.ts |     100 |    83.33 |     100 |     100 | 14                
+  ...ileService.ts |     100 |      100 |     100 |     100 |                   
+  authService.ts   |   89.62 |    76.19 |   94.73 |   89.62 | ...48-151,247-248 
+  ...ticService.ts |     100 |      100 |     100 |     100 |                   
+  ...eckService.ts |   86.41 |    77.77 |     100 |   86.41 | ...14,221,234-235 
+  tenantService.ts |   95.41 |       80 |     100 |   95.41 | 23-24,97-99       
+  userService.ts   |     100 |    87.17 |     100 |     100 | 70,77,102,109,134 
+ ...es/diagnostics |       0 |      100 |     100 |       0 |                   
+  ...sticEngine.ts |       0 |      100 |     100 |       0 | 2-75              
+ ...ostics/modules |       0 |        0 |       0 |       0 |                   
+  ...iagnostics.ts |       0 |        0 |       0 |       0 | 1-108             
+ src/types         |      40 |      100 |     100 |      40 |                   
+  AuditLog.ts      |     100 |      100 |     100 |     100 |                   
+  auth.ts          |       0 |      100 |     100 |       0 | 15-25             
+  csm.ts           |       0 |      100 |     100 |       0 | 2-240             
+  gcc.ts           |     100 |      100 |     100 |     100 |                   
+  repositories.ts  |       0 |        0 |       0 |       0 |                   
+  shared.ts        |       0 |        0 |       0 |       0 |                   
+ src/utils         |   75.34 |    84.54 |   91.83 |   75.34 |                   
+  alertService.ts  |     100 |      100 |     100 |     100 |                   
+  audit.ts         |   94.73 |    66.66 |     100 |   94.73 | 15                
+  authUtils.ts     |      75 |      100 |   66.66 |      75 | 21-23             
+  ...kRateLimit.ts |   44.44 |       40 |     100 |   44.44 | 54-56,60-80       
+  clientUtils.ts   |     100 |    72.72 |     100 |     100 | 19-21             
+  constants.tsx    |       0 |      100 |     100 |       0 | 2-26              
+  ...lculations.ts |       0 |        0 |       0 |       0 | 1-40              
+  ...actLineage.ts |       0 |      100 |     100 |       0 | 8-34              
+  contractUtils.ts |      85 |    77.41 |   77.77 |      85 | ...55-159,182-183 
+  dateUtils.ts     |     100 |      100 |     100 |     100 |                   
+  exportUtils.ts   |     100 |      100 |     100 |     100 |                   
+  formatters.ts    |     100 |      100 |     100 |     100 |                   
+  lazyLoader.ts    |       0 |      100 |     100 |       0 | 2-39              
+  logSanitizer.ts  |     100 |      100 |     100 |     100 |                   
+  logger.ts        |   69.44 |    58.82 |     100 |   69.44 | 20-26,34-37       
+  masks.ts         |     100 |      100 |     100 |     100 |                   
+  permissions.ts   |       0 |      100 |     100 |       0 | 7                 
+  validation.ts    |     100 |    84.61 |     100 |     100 | 23,61             
+ src/utils/exports |   98.33 |    80.48 |    92.3 |   98.33 |                   
+  auditExport.ts   |     100 |    69.23 |     100 |     100 | 9,11,21-23,34,54  
+  clientExport.ts  |   91.07 |    69.23 |   66.66 |   91.07 | 59-63             
+  ...ractExport.ts |     100 |       85 |     100 |     100 | 22-24,82          
+  exportCore.ts    |     100 |    95.65 |     100 |     100 | 81                
+-------------------|---------|----------|---------|---------|-------------------

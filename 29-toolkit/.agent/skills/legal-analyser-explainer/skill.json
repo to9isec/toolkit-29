@@ -1,0 +1,66 @@
+{
+  "name": "legal-analyser-explainer",
+  "version": "1.0.0",
+  "description": "Análise inteligente de documentos jurídicos brasileiros com detecção de riscos, classificação de cláusulas, heatmap jurídico, linha do tempo de obrigações e sugestões de melhoria.",
+  "author": "29",
+  "language": "pt-BR",
+  "category": "legal",
+  "tags": [
+    "legal",
+    "contratos",
+    "análise jurídica",
+    "riscos contratuais",
+    "cláusulas abusivas",
+    "LGPD",
+    "CDC",
+    "Código Civil",
+    "NDA",
+    "compliance"
+  ],
+  "supported_formats": ["pdf", "docx"],
+  "modes": [
+    {
+      "id": "quick",
+      "name": "Modo Rápido",
+      "description": "Visão geral com resumo e riscos principais"
+    },
+    {
+      "id": "detailed",
+      "name": "Modo Detalhado",
+      "description": "Análise completa com explicação das cláusulas"
+    },
+    {
+      "id": "critical",
+      "name": "Modo Crítico",
+      "description": "Busca focada em riscos jurídicos e cláusulas potencialmente abusivas"
+    }
+  ],
+  "capabilities": [
+    "contract_analysis",
+    "clause_classification",
+    "abusive_clause_detection",
+    "risk_scoring",
+    "risk_heatmap",
+    "obligation_timeline",
+    "contract_comparison",
+    "revised_clause_generation",
+    "executive_summary"
+  ],
+  "legal_references": [
+    "Código Civil Brasileiro (Lei 10.406/2002)",
+    "Código de Defesa do Consumidor (Lei 8.078/1990)",
+    "Lei Geral de Proteção de Dados (Lei 13.709/2018)"
+  ],
+  "dependencies": {
+    "python": ">=3.9",
+    "packages": [
+      "pdfplumber",
+      "python-docx",
+      "nltk",
+      "scikit-learn",
+      "numpy"
+    ]
+  },
+  "entry_point": "scripts/analysis_engine.py",
+  "disclaimer": "Esta skill possui caráter exclusivamente informativo e educacional. Não constitui aconselhamento jurídico profissional."
+}

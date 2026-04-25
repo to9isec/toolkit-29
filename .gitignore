@@ -1,0 +1,19 @@
+# Configurações locais sensíveis
+factory/config.json
+.DS_Store
+Thumbs.db
+node_modules/
+
+# Logs e arquivos temporários
+scratch/*
+!scratch/.gitkeep
+*.log
+
+# Pasta de teste gerada localmente
+test-project/
+29-test-project/
+
+# Toolkit Scratch
+29-toolkit/.agent/scratch/*
+!29-toolkit/.agent/scratch/.gitkeep
+

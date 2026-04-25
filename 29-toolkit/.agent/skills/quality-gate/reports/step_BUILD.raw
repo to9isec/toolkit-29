@@ -1,0 +1,123 @@
+
+> fusionone@2.41.33 build
+> vite build
+
+vite v6.4.2 building for production...
+transforming...
+✓ 4131 modules transformed.
+rendering chunks...
+[plugin vite:reporter] 
+(!) /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/src/services/ProfileService.ts is dynamically imported by /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/src/context/AuthContext.tsx but also statically imported by /Users/29/Library/CloudStorage/OneDrive-Pessoal/Projetos/Github/fusionone/src/services/authService.ts, dynamic import will not move module into another chunk.
+
+computing gzip size...
+dist/index.html                                          2.65 kB │ gzip:   0.97 kB
+dist/assets/index-BLxgKs8A.css                         159.46 kB │ gzip:  21.73 kB
+dist/assets/utils-BZ4bVz_9.js                            0.10 kB │ gzip:   0.11 kB │ map:     0.39 kB
+dist/assets/useDebounce-BUK3jerF.js                      0.20 kB │ gzip:   0.17 kB │ map:     1.09 kB
+dist/assets/minus-QJnfFTlk.js                            0.29 kB │ gzip:   0.24 kB │ map:     0.79 kB
+dist/assets/check-CN8xt7Zv.js                            0.30 kB │ gzip:   0.24 kB │ map:     0.80 kB
+dist/assets/loader-circle-BkjIldWe.js                    0.32 kB │ gzip:   0.26 kB │ map:     0.87 kB
+dist/assets/plus-CVH_APqQ.js                             0.33 kB │ gzip:   0.25 kB │ map:     0.89 kB
+dist/assets/arrow-up-right-ChA6iiXy.js                   0.34 kB │ gzip:   0.26 kB │ map:     0.96 kB
+dist/assets/arrow-right-BlJJ0j4Z.js                      0.34 kB │ gzip:   0.27 kB │ map:     0.95 kB
+dist/assets/arrow-left-DYPKbZ1Y.js                       0.34 kB │ gzip:   0.27 kB │ map:     0.94 kB
+dist/assets/trending-up-Bjj6SxAs.js                      0.34 kB │ gzip:   0.27 kB │ map:     0.96 kB
+dist/assets/dateUtils-DssA-_Hs.js                        0.35 kB │ gzip:   0.22 kB │ map:     2.72 kB
+dist/assets/trending-down-DSlLOUsW.js                    0.35 kB │ gzip:   0.28 kB │ map:     0.97 kB
+dist/assets/lock-uimxEiyZ.js                             0.38 kB │ gzip:   0.29 kB │ map:     1.01 kB
+dist/assets/useHealthScore-CGX8kyyQ.js                   0.39 kB │ gzip:   0.29 kB │ map:     1.51 kB
+dist/assets/target-CgYgj93t.js                           0.40 kB │ gzip:   0.26 kB │ map:     1.11 kB
+dist/assets/upload-BUZOYRzo.js                           0.40 kB │ gzip:   0.30 kB │ map:     1.05 kB
+dist/assets/history-CD4EJ9pS.js                          0.41 kB │ gzip:   0.30 kB │ map:     1.06 kB
+dist/assets/message-square-Dmerxtik.js                   0.41 kB │ gzip:   0.31 kB │ map:     1.01 kB
+dist/assets/pen-Bi_iLtE2.js                              0.41 kB │ gzip:   0.31 kB │ map:     0.94 kB
+dist/assets/database-D7CcTG2A.js                         0.42 kB │ gzip:   0.31 kB │ map:     1.12 kB
+dist/assets/chart-column-CKQwmc5l.js                     0.42 kB │ gzip:   0.30 kB │ map:     1.16 kB
+dist/assets/circle-question-mark-JA4f1cIm.js             0.42 kB │ gzip:   0.31 kB │ map:     1.17 kB
+dist/assets/funnel-CA2Z_nWb.js                           0.43 kB │ gzip:   0.32 kB │ map:     0.98 kB
+dist/assets/circle-user-CAYZIdzL.js                      0.43 kB │ gzip:   0.31 kB │ map:     1.15 kB
+dist/assets/pencil-DTSMJ1fP.js                           0.45 kB │ gzip:   0.33 kB │ map:     1.06 kB
+dist/assets/smile-Ddoz1i2-.js                            0.47 kB │ gzip:   0.32 kB │ map:     1.27 kB
+dist/assets/wrench-CkXFJeYJ.js                           0.48 kB │ gzip:   0.34 kB │ map:     1.03 kB
+dist/assets/square-pen-e0JGmo8a.js                       0.49 kB │ gzip:   0.34 kB │ map:     1.13 kB
+dist/assets/refresh-cw-DfixVmQu.js                       0.49 kB │ gzip:   0.33 kB │ map:     1.22 kB
+dist/assets/tag-BiSFkmpk.js                              0.50 kB │ gzip:   0.35 kB │ map:     1.14 kB
+dist/assets/CsmHealthScoreService-4huv-Iie.js            0.50 kB │ gzip:   0.33 kB │ map:     1.00 kB
+dist/assets/heart-pulse-UYUnGvN5.js                      0.51 kB │ gzip:   0.36 kB │ map:     1.15 kB
+dist/assets/camera-BjoooZFk.js                           0.51 kB │ gzip:   0.35 kB │ map:     1.15 kB
+dist/assets/file-down-BwjFFzZW.js                        0.53 kB │ gzip:   0.34 kB │ map:     1.28 kB
+dist/assets/package-CDW6D0NX.js                          0.55 kB │ gzip:   0.36 kB │ map:     1.29 kB
+dist/assets/useSatisfactionParams-DcZEPYuM.js            0.55 kB │ gzip:   0.39 kB │ map:     2.34 kB
+dist/assets/building-2-BzVsF_F0.js                       0.56 kB │ gzip:   0.34 kB │ map:     1.38 kB
+dist/assets/file-text-D8e2PcEK.js                        0.56 kB │ gzip:   0.35 kB │ map:     1.37 kB
+dist/assets/trophy-DUI2F2ZF.js                           0.65 kB │ gzip:   0.38 kB │ map:     1.49 kB
+dist/assets/Card-DxRcCgh4.js                             0.66 kB │ gzip:   0.33 kB │ map:     2.08 kB
+dist/assets/InfoLayout-IK2r67VG.js                       0.70 kB │ gzip:   0.38 kB │ map:     1.91 kB
+dist/assets/Select-DYu0ZR6j.js                           0.86 kB │ gzip:   0.50 kB │ map:     2.27 kB
+dist/assets/useResizableColumns-CcKl2jIo.js              0.91 kB │ gzip:   0.54 kB │ map:     3.46 kB
+dist/assets/authSchemas-14R3rvcJ.js                      0.92 kB │ gzip:   0.50 kB │ map:     2.27 kB
+dist/assets/useDeliveredValueImpactLevels-8bBwx346.js    0.95 kB │ gzip:   0.45 kB │ map:     3.76 kB
+dist/assets/useActions-C41jxIn8.js                       1.03 kB │ gzip:   0.49 kB │ map:     4.76 kB
+dist/assets/useStakeholders-DC2gI6vj.js                  1.06 kB │ gzip:   0.56 kB │ map:     5.06 kB
+dist/assets/ContextHelp-C75tT7b-.js                      1.07 kB │ gzip:   0.62 kB │ map:     2.80 kB
+dist/assets/useStrategies-HTX0zB_l.js                    1.16 kB │ gzip:   0.52 kB │ map:     4.73 kB
+dist/assets/StatusBadge-Cn_DMdL9.js                      1.43 kB │ gzip:   0.60 kB │ map:     4.51 kB
+dist/assets/useCrudPage-ClcxalgH.js                      1.48 kB │ gzip:   0.70 kB │ map:     5.29 kB
+dist/assets/CsmStakeholderService-fR-OpBJI.js            1.55 kB │ gzip:   0.58 kB │ map:     5.26 kB
+dist/assets/useDashboardMetrics-CT2J7oc7.js              1.84 kB │ gzip:   0.89 kB │ map:     5.31 kB
+dist/assets/useStrategicObjectives-BY1j4oAG.js           1.84 kB │ gzip:   0.82 kB │ map:     6.41 kB
+dist/assets/CsmMetricsRepository-36MtHO3o.js             1.93 kB │ gzip:   0.51 kB │ map:     8.05 kB
+dist/assets/LucideIcon-H2_v7u0L.js                       2.21 kB │ gzip:   1.23 kB │ map:     6.80 kB
+dist/assets/PendingAccess-BMH4wzmp.js                    2.37 kB │ gzip:   1.06 kB │ map:     5.01 kB
+dist/assets/CSMReports-EJhbloEM.js                       2.62 kB │ gzip:   1.23 kB │ map:     5.15 kB
+dist/assets/StatsCard-C-UcNd3y.js                        2.85 kB │ gzip:   1.22 kB │ map:     6.78 kB
+dist/assets/useCadences-BOZcngB5.js                      2.92 kB │ gzip:   0.78 kB │ map:    11.23 kB
+dist/assets/DeleteConfirmationModal-BSzluAE8.js          2.99 kB │ gzip:   1.32 kB │ map:     7.82 kB
+dist/assets/ForgotPassword-bTA94xBG.js                   4.12 kB │ gzip:   1.66 kB │ map:    10.89 kB
+dist/assets/CSMAccountsLayout-C5EUF7sK.js                4.39 kB │ gzip:   1.77 kB │ map:    12.87 kB
+dist/assets/permissions.config-D-XHsMlW.js               4.68 kB │ gzip:   0.72 kB │ map:    13.52 kB
+dist/assets/FileSaver.min-_Gg51n8b.js                    4.99 kB │ gzip:   2.34 kB │ map:    12.49 kB
+dist/assets/ResetPassword-CXEVqddv.js                    6.91 kB │ gzip:   2.82 kB │ map:    19.85 kB
+dist/assets/useOperationalTasks-BdaMYqEd.js              6.99 kB │ gzip:   1.88 kB │ map:    25.97 kB
+dist/assets/Register-CUepzqhm.js                         7.30 kB │ gzip:   2.53 kB │ map:    20.11 kB
+dist/assets/Login-CJbTDsuE.js                            8.19 kB │ gzip:   3.13 kB │ map:    24.14 kB
+dist/assets/TermsOfUse-1X8upHm6.js                      10.14 kB │ gzip:   3.88 kB │ map:    19.18 kB
+dist/assets/useCSMQueries-CMSujF0c.js                   10.24 kB │ gzip:   3.01 kB │ map:    40.86 kB
+dist/assets/PrivacyPolicy-CiveQR8k.js                   12.28 kB │ gzip:   4.23 kB │ map:    24.45 kB
+dist/assets/ExportPreviewModal-De4DYL10.js              12.38 kB │ gzip:   4.23 kB │ map:    30.04 kB
+dist/assets/HealthScore-BXEqP8PJ.js                     12.64 kB │ gzip:   4.07 kB │ map:    32.09 kB
+dist/assets/ContractQuickViewModal--ri8cJ2N.js          13.41 kB │ gzip:   3.15 kB │ map:    34.93 kB
+dist/assets/Reports-CQYCFvmR.js                         14.26 kB │ gzip:   4.52 kB │ map:    40.38 kB
+dist/assets/DeliveredValue-RjxSUDU9.js                  15.61 kB │ gzip:   4.39 kB │ map:    45.44 kB
+dist/assets/ContractSummary-DPvKwFBt.js                 17.88 kB │ gzip:   4.75 kB │ map:    41.13 kB
+dist/assets/GlobalHub-CjFY2we_.js                       18.56 kB │ gzip:   8.20 kB │ map:    38.69 kB
+dist/assets/Satisfaction-BiG9wTkV.js                    18.75 kB │ gzip:   5.33 kB │ map:    51.19 kB
+dist/assets/OperationalPlan-CfVQKYRD.js                 19.38 kB │ gzip:   5.54 kB │ map:    57.04 kB
+dist/assets/PaymentStatusReport-CZFQbd5Q.js             22.70 kB │ gzip:   6.80 kB │ map:    75.55 kB
+dist/assets/purify.es-4yArvS00.js                       22.83 kB │ gzip:   8.76 kB │ map:    94.02 kB
+dist/assets/CSMSettingsTab-BTLBABpG.js                  22.90 kB │ gzip:   6.20 kB │ map:    59.84 kB
+dist/assets/MFASetup-DK5kJ_r0.js                        23.90 kB │ gzip:   8.79 kB │ map:    94.18 kB
+dist/assets/UsageEvaluation-DJuTE-bH.js                 24.99 kB │ gzip:   7.86 kB │ map:    71.28 kB
+dist/assets/AuditHistoryPage-CLp8b2yq.js                25.86 kB │ gzip:   7.64 kB │ map:    67.51 kB
+dist/assets/Contracts-BjaROeCu.js                       26.42 kB │ gzip:   7.25 kB │ map:    81.32 kB
+dist/assets/Clients-CVgtn-fg.js                         26.94 kB │ gzip:   8.58 kB │ map:    76.51 kB
+dist/assets/SystemStatusPage-PQZQ_9oa.js                27.00 kB │ gzip:   7.48 kB │ map:    79.29 kB
+dist/assets/CSMDashboard-DyAJA3WH.js                    34.03 kB │ gzip:   7.49 kB │ map:    89.76 kB
+dist/assets/GCCDashboard-Co9dlOFe.js                    36.78 kB │ gzip:   7.84 kB │ map:   103.08 kB
+dist/assets/EvaluatorPage-CiMSev12.js                   38.51 kB │ gzip:  10.69 kB │ map:   103.16 kB
+dist/assets/data-vendor-DqXrYURB.js                     42.05 kB │ gzip:  12.49 kB │ map:   159.11 kB
+dist/assets/SuccessPlan-Cxw1G3Ky.js                     44.82 kB │ gzip:  10.91 kB │ map:   124.42 kB
+dist/assets/ContractModal-CdrboXvd.js                   58.32 kB │ gzip:  15.41 kB │ map:   175.00 kB
+dist/assets/BrazilDensityMap-BAhJxaIG.js                70.01 kB │ gzip:  25.62 kB │ map:   304.83 kB
+dist/assets/utils-vendor-CZOe7PkV.js                    89.61 kB │ gzip:  24.17 kB │ map:   553.20 kB
+dist/assets/ManagementPage-CK2YPpwv.js                 100.07 kB │ gzip:  17.65 kB │ map:   302.47 kB
+dist/assets/motion-vendor-Dzjpz_YV.js                  114.38 kB │ gzip:  37.68 kB │ map:   631.82 kB
+dist/assets/index.es-wmdmQXys.js                       159.20 kB │ gzip:  53.22 kB │ map:   641.81 kB
+dist/assets/supabase-vendor-CGkX2X6e.js                168.41 kB │ gzip:  43.83 kB │ map:   765.89 kB
+dist/assets/react-vendor-H1iI4TEu.js                   193.79 kB │ gzip:  60.44 kB │ map:   909.48 kB
+dist/assets/html2canvas.esm-vQ3n7XO2.js                201.88 kB │ gzip:  47.58 kB │ map:   602.46 kB
+dist/assets/sentry-vendor-lugctxZD.js                  259.66 kB │ gzip:  85.22 kB │ map: 1,365.61 kB
+dist/assets/pdf-vendor-prQKEsIh.js                     422.02 kB │ gzip: 137.15 kB │ map: 1,425.98 kB
+dist/assets/index-Bnye-fnq.js                          441.76 kB │ gzip: 120.59 kB │ map: 1,929.44 kB
+dist/assets/excel-vendor-DLLmWJJh.js                   939.17 kB │ gzip: 269.57 kB │ map: 2,087.17 kB
+✓ built in 5.59s

@@ -1,0 +1,301 @@
+{
+  "version": "1.0",
+  "description": "Tipos de cláusulas contratuais reconhecidos pelo classificador",
+  "total_types": 42,
+  "clause_types": [
+    {
+      "id": "objeto",
+      "name": "Objeto do contrato",
+      "category": "geral",
+      "keywords": ["objeto", "finalidade", "escopo", "propósito", "descrição dos serviços"],
+      "risk_weight": 1
+    },
+    {
+      "id": "partes",
+      "name": "Definição das partes",
+      "category": "geral",
+      "keywords": ["contratante", "contratado", "contratada", "partes", "qualificação", "CNPJ", "CPF"],
+      "risk_weight": 1
+    },
+    {
+      "id": "definicoes",
+      "name": "Definições",
+      "category": "geral",
+      "keywords": ["definições", "para os fins", "considera-se", "entende-se por", "glossário"],
+      "risk_weight": 1
+    },
+    {
+      "id": "vigencia",
+      "name": "Vigência",
+      "category": "prazo",
+      "keywords": ["vigência", "prazo", "duração", "período", "validade", "termo inicial", "termo final"],
+      "risk_weight": 2
+    },
+    {
+      "id": "renovacao",
+      "name": "Renovação",
+      "category": "prazo",
+      "keywords": ["renovação", "prorrogação", "extensão do prazo", "renovar automaticamente"],
+      "risk_weight": 3
+    },
+    {
+      "id": "pagamento",
+      "name": "Pagamento",
+      "category": "financeiro",
+      "keywords": ["pagamento", "valor", "preço", "remuneração", "honorários", "contraprestação"],
+      "risk_weight": 2
+    },
+    {
+      "id": "reajuste",
+      "name": "Reajuste de preço",
+      "category": "financeiro",
+      "keywords": ["reajuste", "correção monetária", "atualização", "IGPM", "IPCA", "índice", "inflação"],
+      "risk_weight": 3
+    },
+    {
+      "id": "multa",
+      "name": "Multas contratuais",
+      "category": "financeiro",
+      "keywords": ["multa", "multa contratual", "multa compensatória", "multa moratória", "cláusula penal"],
+      "risk_weight": 4
+    },
+    {
+      "id": "penalidade",
+      "name": "Penalidades",
+      "category": "financeiro",
+      "keywords": ["penalidade", "sanção", "punição", "sanções contratuais"],
+      "risk_weight": 4
+    },
+    {
+      "id": "juros_mora",
+      "name": "Juros e mora",
+      "category": "financeiro",
+      "keywords": ["juros", "mora", "atraso", "juros moratórios", "juros de mora", "encargos moratórios"],
+      "risk_weight": 2
+    },
+    {
+      "id": "rescisao",
+      "name": "Rescisão contratual",
+      "category": "encerramento",
+      "keywords": ["rescisão", "resolução", "término", "resilição", "extinção", "encerramento"],
+      "risk_weight": 3
+    },
+    {
+      "id": "aviso_previo",
+      "name": "Aviso prévio",
+      "category": "encerramento",
+      "keywords": ["aviso prévio", "notificação prévia", "comunicação prévia", "antecedência"],
+      "risk_weight": 2
+    },
+    {
+      "id": "distrato",
+      "name": "Distrato",
+      "category": "encerramento",
+      "keywords": ["distrato", "acordo de encerramento", "término amigável"],
+      "risk_weight": 2
+    },
+    {
+      "id": "foro",
+      "name": "Foro",
+      "category": "jurisdição",
+      "keywords": ["foro", "comarca", "jurisdição", "competência", "foro competente"],
+      "risk_weight": 2
+    },
+    {
+      "id": "arbitragem",
+      "name": "Arbitragem",
+      "category": "jurisdição",
+      "keywords": ["arbitragem", "câmara de arbitragem", "tribunal arbitral", "árbitro"],
+      "risk_weight": 3
+    },
+    {
+      "id": "mediacao",
+      "name": "Mediação",
+      "category": "jurisdição",
+      "keywords": ["mediação", "mediador", "conciliação", "solução alternativa"],
+      "risk_weight": 1
+    },
+    {
+      "id": "confidencialidade",
+      "name": "Confidencialidade",
+      "category": "sigilo",
+      "keywords": ["confidencial", "sigilo", "segredo", "não divulgação", "NDA", "informação confidencial"],
+      "risk_weight": 3
+    },
+    {
+      "id": "nao_concorrencia",
+      "name": "Não concorrência",
+      "category": "sigilo",
+      "keywords": ["não concorrência", "não competição", "exclusividade", "concorrente"],
+      "risk_weight": 3
+    },
+    {
+      "id": "nao_solicitacao",
+      "name": "Não solicitação",
+      "category": "sigilo",
+      "keywords": ["não solicitação", "não aliciamento", "não recrutamento"],
+      "risk_weight": 2
+    },
+    {
+      "id": "propriedade_intelectual",
+      "name": "Propriedade intelectual",
+      "category": "pi",
+      "keywords": ["propriedade intelectual", "direito autoral", "patente", "marca", "software", "código-fonte"],
+      "risk_weight": 3
+    },
+    {
+      "id": "licenca",
+      "name": "Licença de uso",
+      "category": "pi",
+      "keywords": ["licença", "licenciamento", "direito de uso", "sublicença", "cessão de uso"],
+      "risk_weight": 2
+    },
+    {
+      "id": "cessao_direitos",
+      "name": "Cessão de direitos",
+      "category": "pi",
+      "keywords": ["cessão", "transferência de direitos", "ceder", "transmitir direitos"],
+      "risk_weight": 3
+    },
+    {
+      "id": "limitacao_responsabilidade",
+      "name": "Limitação de responsabilidade",
+      "category": "responsabilidade",
+      "keywords": ["limitação de responsabilidade", "limite de responsabilidade", "responsabilidade limitada", "cap de responsabilidade"],
+      "risk_weight": 4
+    },
+    {
+      "id": "indenizacao",
+      "name": "Indenização",
+      "category": "responsabilidade",
+      "keywords": ["indenização", "indenizar", "ressarcimento", "reparação", "danos"],
+      "risk_weight": 3
+    },
+    {
+      "id": "garantia",
+      "name": "Garantia",
+      "category": "responsabilidade",
+      "keywords": ["garantia", "garantias", "garantir", "assegurar"],
+      "risk_weight": 2
+    },
+    {
+      "id": "seguros",
+      "name": "Seguros",
+      "category": "responsabilidade",
+      "keywords": ["seguro", "apólice", "sinistro", "cobertura securitária"],
+      "risk_weight": 2
+    },
+    {
+      "id": "sla",
+      "name": "Acordo de nível de serviço (SLA)",
+      "category": "operacional",
+      "keywords": ["SLA", "nível de serviço", "acordo de nível", "uptime", "disponibilidade mínima"],
+      "risk_weight": 3
+    },
+    {
+      "id": "disponibilidade",
+      "name": "Disponibilidade de serviço",
+      "category": "operacional",
+      "keywords": ["disponibilidade", "uptime", "tempo de atividade", "interrupção"],
+      "risk_weight": 2
+    },
+    {
+      "id": "suporte",
+      "name": "Suporte técnico",
+      "category": "operacional",
+      "keywords": ["suporte", "assistência técnica", "help desk", "atendimento", "chamado"],
+      "risk_weight": 1
+    },
+    {
+      "id": "entrega",
+      "name": "Entrega e prazo",
+      "category": "operacional",
+      "keywords": ["entrega", "prazo de entrega", "cronograma", "milestone", "marco"],
+      "risk_weight": 2
+    },
+    {
+      "id": "protecao_dados",
+      "name": "Proteção de dados pessoais",
+      "category": "privacidade",
+      "keywords": ["dados pessoais", "LGPD", "privacidade", "tratamento de dados", "controlador", "operador"],
+      "risk_weight": 4
+    },
+    {
+      "id": "compartilhamento_dados",
+      "name": "Compartilhamento de dados",
+      "category": "privacidade",
+      "keywords": ["compartilhamento de dados", "terceiros", "parceiros", "subprocessador", "transferência de dados"],
+      "risk_weight": 4
+    },
+    {
+      "id": "consentimento_dados",
+      "name": "Consentimento para dados",
+      "category": "privacidade",
+      "keywords": ["consentimento", "autorização", "opt-in", "opt-out", "titular dos dados"],
+      "risk_weight": 3
+    },
+    {
+      "id": "transferencia_internacional",
+      "name": "Transferência internacional de dados",
+      "category": "privacidade",
+      "keywords": ["transferência internacional", "dados no exterior", "cloud", "servidores fora"],
+      "risk_weight": 4
+    },
+    {
+      "id": "retencao_dados",
+      "name": "Retenção de dados",
+      "category": "privacidade",
+      "keywords": ["retenção", "armazenamento", "prazo de retenção", "eliminação", "exclusão de dados"],
+      "risk_weight": 3
+    },
+    {
+      "id": "obrigacoes_contratante",
+      "name": "Obrigações do contratante",
+      "category": "obrigações",
+      "keywords": ["obrigações do contratante", "deveres do contratante", "compete ao contratante"],
+      "risk_weight": 2
+    },
+    {
+      "id": "obrigacoes_contratado",
+      "name": "Obrigações do contratado",
+      "category": "obrigações",
+      "keywords": ["obrigações do contratado", "deveres do contratado", "compete ao contratado", "prestador"],
+      "risk_weight": 2
+    },
+    {
+      "id": "forca_maior",
+      "name": "Força maior e caso fortuito",
+      "category": "exceções",
+      "keywords": ["força maior", "caso fortuito", "evento extraordinário", "imprevisível"],
+      "risk_weight": 2
+    },
+    {
+      "id": "subcontratacao",
+      "name": "Subcontratação",
+      "category": "operacional",
+      "keywords": ["subcontratação", "subcontratar", "terceirizar", "terceirização"],
+      "risk_weight": 2
+    },
+    {
+      "id": "cancelamento",
+      "name": "Cancelamento",
+      "category": "encerramento",
+      "keywords": ["cancelamento", "cancelar", "desistência", "arrependimento"],
+      "risk_weight": 3
+    },
+    {
+      "id": "disposicoes_gerais",
+      "name": "Disposições gerais",
+      "category": "geral",
+      "keywords": ["disposições gerais", "disposições finais", "gerais", "finais"],
+      "risk_weight": 1
+    },
+    {
+      "id": "comunicacoes",
+      "name": "Comunicações e notificações",
+      "category": "geral",
+      "keywords": ["comunicação", "notificação", "endereço", "correspondência", "email para notificação"],
+      "risk_weight": 1
+    }
+  ]
+}
