@@ -1,13 +1,18 @@
-MIT License
+Toolkit-29 Public License (Non-Commercial)
 
 Copyright (c) 2026 Toolkit-29 Contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+to use, copy, modify, merge, publish, distribute, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
+
+1. THE SOFTWARE SHALL BE USED FOR PERSONAL, ARCHITECTURAL AID, OR INTERNAL 
+   DEVELOPMENT PURPOSES ONLY.
+2. SELLING, SUBLICENSING, OR COMMERCIAL REDISTRIBUTION OF THE SOFTWARE 
+   ITSELF AS A PRODUCT IS STRICTLY PROHIBITED.
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
@@ -24,16 +29,19 @@ SOFTWARE.
 PORTUGUÊS (BR) - TRADUÇÃO INFORMATIVA
 --------------------------------------------------
 
-Licença MIT
+Licença Pública Toolkit-29 (Não Comercial)
 
 Copyright (c) 2026 Toolkit-29 Contributors
 
 É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
 deste software e dos arquivos de documentação associados (o "Software"), para
-lidar com o Software sem restrições, incluindo, sem limitação, os direitos de
-usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender
-cópias do Software, e permitir que as pessoas a quem o Software é fornecido o
-façam, mediante as seguintes condições:
+lidar com o Software para fins de auxílio arquitetural e desenvolvimento, 
+mediante as seguintes condições:
+
+1. O SOFTWARE DEVE SER UTILIZADO APENAS PARA FINS PESSOAIS, DE AUXÍLIO 
+   ARQUITETURAL OU DESENVOLVIMENTO INTERNO.
+2. A VENDA, SUBLICENCIAMENTO OU REDISTRIBUIÇÃO COMERCIAL DO SOFTWARE 
+   EM SI COMO UM PRODUTO É ESTRITAMENTE PROIBIDA.
 
 O aviso de copyright acima e este aviso de permissão devem ser incluídos em todas
 as cópias ou partes substanciais do Software.
@@ -50,17 +58,19 @@ NEGOCIAÇÕES NO SOFTWARE.
 ESPAÑOL - TRADUCCIÓN INFORMATIVA
 --------------------------------------------------
 
-Licencia MIT
+Licencia Pública Toolkit-29 (No Comercial)
 
 Copyright (c) 2026 Toolkit-29 Contributors
 
 Por la presente se concede permiso, de forma gratuita, a cualquier persona que
 obtenga una copia de este software y de los archivos de documentación asociados
-(el "Software"), para utilizar el Software sem restricciones, incluyendo, sin
-limitación, los derechos de uso, copia, modificación, fusión, publicación,
-distribución, sublicenciamiento y/ou venta de copias del Software, y para permitir
-a las personas a quienes se les proporcione el Software que lo hagan, bajo las
-siguientes condiciones:
+(el "Software"), para utilizar el Software con fines de ayuda arquitectónica y 
+desarrollo, bajo las siguientes condiciones:
+
+1. EL SOFTWARE SE UTILIZARÁ ÚNICAMENTE PARA FINES PERSONALES, DE AYUDA 
+   ARQUITECTÓNICA O DESARROLLO INTERNO.
+2. LA VENTA, SUBLICENCIAMIENTO O REDISTRIBUCIÓN COMERCIAL DEL SOFTWARE 
+   EN SÍ MISMO COMO PRODUCTO ESTÁ ESTRICTAMENTE PROHIBIDA.
 
 El aviso de copyright anterior y este aviso de permiso se incluirán en todas las
 copias o partes sustanciales del Software.

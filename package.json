@@ -10,7 +10,7 @@
     "start": "node factory/29-engine.js"
   },
   "author": "29",
-  "license": "MIT",
+  "license": "Custom (Non-Commercial)",
   "dependencies": {},
   "devDependencies": {},
   "engines": {

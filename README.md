@@ -27,7 +27,7 @@ A pasta `/rule` contém as leis que governam o projeto. É o "Contrato Social" q
 
 ---
 
-## 🛠️ 2. Instalação e Configuração (O Modo Elite)
+## 🛠️ 2. Instalação e Configuração (Setup Rápido)
 
 O Toolkit-29 deve ser instalado em uma pasta fixa (Sua "Fábrica"). A partir de lá, ele criará projetos em qualquer outro local do seu sistema.
 
@@ -77,4 +77,15 @@ Após a instalação, você pode usar estes comandos de **qualquer lugar**:
 Mantenha a "Fábrica" em um local central. Quando precisar de um novo projeto, apenas digite `29-init`. O motor cuidará de "dar à luz" ao seu novo software com toda a inteligência necessária, mantendo o seu ambiente de trabalho limpo e profissional.
 
 ---
-*Gerado e Protegido pelo Protocolo 29.*
+
+## ⚖️ 6. Termos de Uso e Isenção de Responsabilidade
+
+O **Toolkit-29** é fornecido como uma ferramenta de **auxílio e facilitação arquitetural**. Ao utilizar este software, você concorda com os seguintes termos:
+
+1.  **Natureza da Ferramenta**: O Toolkit-29 é um facilitador de scaffolding e governança. Ele não substitui a necessidade de revisão técnica e auditoria por parte do desenvolvedor responsável.
+2.  **Isenção de Garantias**: O software é fornecido "COMO ESTÁ", sem garantias de qualquer tipo, expressas ou implícitas, incluindo, mas não se limitando a, garantias de segurança, funcionalidade ou adequação a um propósito específico.
+3.  **Responsabilidade do Usuário**: O usuário é o único responsável por qualquer código gerado, modificado ou implementado através desta ferramenta. Cabe ao usuário auditar e validar a segurança e integridade de seus próprios projetos.
+4.  **Limitação de Responsabilidade**: Em nenhum caso o autor ou contribuidores do Toolkit-29 serão responsáveis por quaisquer danos, perdas de dados, falhas de segurança ou prejuízos decorrentes do uso direto ou indireto desta ferramenta.
+
+---
+*Licenciado sob a Licença Pública Toolkit-29 (Não Comercial). © 2026.*
