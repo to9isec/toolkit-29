@@ -2,7 +2,7 @@
 
 > **É um Framework auxiliar para criação de estruturas de projetos, com foco em Governança, Arquitetura de Software e Inteligência Artificial.**
 
-O **Toolkit-29** é uma ferramenta de **auxilio para criação de projetos autonomos** que injeta expertise técnica criando pastas e arquivos necessarios para execução inicial de um projetoa, auxiliando na esturtura para da capacidade de interagir com IA e seguindo diretrizes de governança definidas na seguir no projeto. Ele automatiza a criação de projetos estruturando a raiz e as pastas do projeto, garantindo conformidade, evitando reesturutação futura com o seu projeto através do nosso **Protocolo 29**.
+O **Toolkit-29** é uma ferramenta de **auxilio para criação de projetos autonomos** que injeta expertise técnica criando pastas e arquivos necessarios para execução inicial de um projeto, auxiliando na estrutura para da capacidade de interagir com IA e seguindo diretrizes de governança definidas na seguir no projeto. Ele automatiza a criação de projetos estruturando a raiz e as pastas do projeto, garantindo conformidade, evitando reesturutação futura com o seu projeto através do nosso **Protocolo 29**.
 
 ---
 
