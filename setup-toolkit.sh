@@ -1,9 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
-# Setup Script para o Toolkit-29 (Mac/Linux)
+# Setup Script para o Toolkit-29 (Compatibilidade Universal: Sh, Dash, Bash, Zsh)
 # Local: Dinâmico
 
-BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# Pega o diretório do script de forma compatível
+BASE_DIR=$(cd "$(dirname "$0")" && pwd)
 ENGINE_PATH="$BASE_DIR/factory/29-engine.js"
 
 echo "🚀 Iniciando setup do Toolkit-29..."
@@ -27,34 +28,28 @@ fi
 # Dar permissão de execução ao motor
 chmod +x "$ENGINE_PATH"
 
-# Detectar shell
-if [ -n "$ZSH_VERSION" ]; then
+# Detectar shell de forma mais robusta
+if [ -f "$HOME/.zshrc" ]; then
     SHELL_RC="$HOME/.zshrc"
-elif [ -n "$BASH_VERSION" ]; then
-    SHELL_RC="$HOME/.bashrc"
 else
-    # Fallback para .zshrc ou .bashrc se não detectado
-    if [ -f "$HOME/.zshrc" ]; then
-        SHELL_RC="$HOME/.zshrc"
-    else
-        SHELL_RC="$HOME/.bashrc"
-    fi
+    SHELL_RC="$HOME/.bashrc"
 fi
 
 echo "🐚 Shell detectado: $SHELL_RC"
 
-# Função para adicionar ou atualizar alias
+# Função para adicionar ou atualizar alias (Compatível com POSIX)
 update_alias() {
-    local name=$1
-    local command=$2
+    name=$1
+    cmd=$2
     if ! grep -q "alias $name=" "$SHELL_RC" 2>/dev/null; then
-        echo "alias $name='$command'" >> "$SHELL_RC"
+        echo "alias $name='$cmd'" >> "$SHELL_RC"
         echo "✅ Alias '$name' adicionado."
     else
-        if [[ "$OSTYPE" == "darwin"* ]]; then
-            sed -i '' "s|alias $name=.*|alias $name='$command'|g" "$SHELL_RC"
+        # Detecta OS para o SED correto
+        if [ "$(uname)" = "Darwin" ]; then
+            sed -i '' "s|alias $name=.*|alias $name='$cmd'|g" "$SHELL_RC"
         else
-            sed -i "s|alias $name=.*|alias $name='$command'|g" "$SHELL_RC"
+            sed -i "s|alias $name=.*|alias $name='$cmd'|g" "$SHELL_RC"
         fi
         echo "🟡 Alias '$name' atualizado."
     fi
@@ -73,10 +68,14 @@ echo "ou simplesmente abrir um novo terminal."
 echo "--------------------------------------------------"
 echo ""
 
-read -p "🚀 Deseja iniciar seu primeiro projeto agora? (s/n): " confirm
-if [[ $confirm == [sS] || $confirm == [sS][iI] ]]; then
-    node "$ENGINE_PATH"
-else
-    echo "Até logo! Quando estiver pronto, use o comando '29-init'."
-fi
+echo "🚀 Deseja iniciar seu primeiro projeto agora? (s/n): "
+read confirm
 
+case "$confirm" in
+    [sS]|[sS][iI])
+        node "$ENGINE_PATH"
+        ;;
+    *)
+        echo "Até logo! Quando estiver pronto, use o comando '29-init'."
+        ;;
+esac

@@ -1,7 +1,9 @@
 # Setup Script para o Toolkit-29 (Windows PowerShell)
-# Local: Dinâmico
+# Local: Dinâmico e Robusto
 
-$BaseDir = Get-Location
+# Garante que o caminho seja absoluto e correto
+$BaseDir = $PSScriptRoot
+if (!$BaseDir) { $BaseDir = Get-Location }
 $EnginePath = Join-Path $BaseDir "factory\29-engine.js"
 
 Write-Host "`n🚀 Iniciando setup do Toolkit-29..." -ForegroundColor Cyan
@@ -29,6 +31,9 @@ function Add-ToolkitFunction {
 
     $ProfilePath = $PROFILE
     if (!(Test-Path $ProfilePath)) {
+        # Cria a pasta do perfil se não existir
+        $ProfileDir = Split-Path $ProfilePath
+        if (!(Test-Path $ProfileDir)) { New-Item -Path $ProfileDir -ItemType Directory -Force | Out-Null }
         New-Item -Path $ProfilePath -ItemType File -Force | Out-Null
     }
 
@@ -56,6 +61,9 @@ Write-Host "--------------------------------------------------" -ForegroundColor
 Write-Host "💡 IMPORTANTE: Para usar os comandos '29-init' de qualquer"
 Write-Host "lugar no futuro, você precisará reiniciar o PowerShell ou rodar:"
 Write-Host ". `$PROFILE"
+Write-Host ""
+Write-Host "⚠️  Se receber erro de permissão (Script Execution Policy), rode:"
+Write-Host "Set-ExecutionPolicy RemoteSigned -Scope CurrentUser"
 Write-Host "--------------------------------------------------" -ForegroundColor Gray
 Write-Host ""
 
@@ -65,4 +73,3 @@ if ($Choice -eq "s" -or $Choice -eq "si") {
 } else {
     Write-Host "`nAté logo! Quando estiver pronto, use o comando '29-init'." -ForegroundColor Cyan
 }
-
