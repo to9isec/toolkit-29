@@ -7,8 +7,8 @@ const os = require('os');
 const { execSync } = require('child_process');
 
 /**
- * Toolkit-29 - Motor de Alta Performance
- * Versão: 1.2.0 (Zero-Friction + Auto-Copy)
+ * Toolkit-29 - Framework de Auxílio Arquitetural
+ * Versão: 1.3.0 (Zero-Friction + Auto-Copy)
  */
 
 const rl = readline.createInterface({
