@@ -23,7 +23,13 @@ skills:
 
 # 29 Specialized Modes Index
 
-Este módulo consolida os protocolos de atuação personalizados desenvolvidos especificamente para o ecossistema FusionONE e projetos de alta complexidade do usuário 29.
+Este módulo consolida os protocolos de auxílio técnico e atuação personalizados desenvolvidos especificamente para o ecossistema FusionONE e projetos de alta complexidade do usuário 29.
+
+---
+
+## ⚖️ Responsabilidade Técnica
+
+As ferramentas e modos contidos nesta skill são instrumentos de **auxílio à decisão**. A implementação final, a validação de segurança e a conformidade do código produzido por qualquer agente utilizando estas skills são de responsabilidade exclusiva do desenvolvedor/usuário final.
 
 ---
 

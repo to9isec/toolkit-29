@@ -66,9 +66,14 @@ A documentação técnica completa segue o padrão de 15 documentos universais d
 
 Consulte [`docs/contributing.md`](docs/contributing.md) para diretrizes de contribuição e padrões de código.
 
-## 📄 Licença
+## 📄 Licença e Responsabilidade
 
-Este projeto utiliza o ecossistema de elite **Toolkit-29**. Todos os direitos reservados © {{year}}.
+Este projeto foi gerado utilizando o ecossistema **Toolkit-29**, uma ferramenta de **auxílio e facilitação arquitetural**. 
+
+1. **Uso da Ferramenta**: O Toolkit-29 facilitou o scaffolding e a aplicação de governança inicial.
+2. **Isenção**: O uso, manutenção e segurança deste código após a sua geração são de inteira responsabilidade do proprietário do projeto. O ecossistema Toolkit-29 e seus autores não fornecem garantias sobre o código gerado.
+
+© {{year}}. Este projeto utiliza o framework de auxílio Toolkit-29.
 
 ---
 **Versão do Sistema:** 0.1.0

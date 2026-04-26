@@ -1,17 +1,20 @@
-# Toolkit-29 Architecture
+# Toolkit-29: Ecossistema de Engenharia de Projetos
 
-> Comprehensive AI Agent Capability Expansion Toolkit
+> Framework para criação de projetos, apoiando com Governança, Arquitetura de Software e Inteligência Artificial.
 
 ---
 
 ## 📋 Overview
 
-Toolkit-29 is a modular, global system consisting of:
+Toolkit-29 is a modular, global framework designed as an **architectural aid and facilitation tool**. It consists of:
 
 - **20 Specialist Agents** - Role-based AI personas
 - **36 Skills** - Domain-specific knowledge modules
 - **12 Workflows** - Slash command procedures (Global & Project-specific)
 - **29 Specialized Modes** - 18 Advanced auditing/engineering modes
+
+### ⚖️ Disclaimer
+This toolkit is provided as a technical aid for scaffolding and architectural guidance. The final implementation, security, and integrity of any project generated or modified by this toolkit are the **sole responsibility of the user/developer**. The toolkit is provided "AS IS" without warranties.
 
 ---
 

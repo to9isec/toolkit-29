@@ -133,7 +133,9 @@ async function init() {
   const config = await ensureConfig();
   const templatesDir = path.join(__dirname, '../templates');
 
-  console.log('\n🏗️  Toolkit-29 — Criando novo projeto...\n');
+  console.log('\n🏗️  Toolkit-29 — Criando novo projeto...');
+  console.log('⚠️  Aviso: Esta é uma ferramenta de auxílio arquitetural. O uso e a');
+  console.log('   integridade do código gerado são de sua inteira responsabilidade.\n');
   const args = process.argv.slice(2);
   let name, description, stack;
 
