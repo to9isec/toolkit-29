@@ -1,7 +1,7 @@
 {
   "name": "toolkit-29",
-  "version": "1.2.0",
-  "description": "Toolkit-29: Ecossistema de Engenharia de Elite: Scaffolding, Governança e Inteligência Artificial.",
+  "version": "1.3.0",
+  "description": "O Framework para criação de projetos, apoiando com Governança, Arquitetura de Software e Inteligência Artificial.",
   "main": "factory/29-engine.js",
   "bin": {
     "29-init": "./factory/29-engine.js"
