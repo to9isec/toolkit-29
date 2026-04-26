@@ -52,19 +52,46 @@ function slugify(text) {
 
 async function ensureConfig() {
   if (fs.existsSync(configPath)) {
-    return JSON.parse(fs.readFileSync(configPath, 'utf8'));
+    const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+    console.log(`\n📁 Diretório mestre de projetos: ${config.projectsDir}`);
+    return config;
   }
-  console.log('🚀 Bem-vindo ao Toolkit-29! Vamos configurar seu ambiente.\n');
-  const projectsDir = await ask('? Onde salvar seus projetos?', path.join(os.homedir(), 'Documents', 'Projetos'));
-  if (!fs.existsSync(projectsDir)) fs.mkdirSync(projectsDir, { recursive: true });
-  
-  const defaultToolkitPath = path.resolve(__dirname, '../29-toolkit/.agent');
-  const toolkitPath = await ask('? Caminho do 29-toolkit (.agent)', defaultToolkitPath);
 
-  const config = { projectsDir, toolkitPath, setupDate: new Date().toISOString() };
+  console.log('\n🚀 Bem-vindo ao Toolkit-29! Vamos configurar seu ambiente.\n');
+  console.log('ℹ️  Esta configuração será feita apenas uma vez. Ela define onde todos');
+  console.log('   os seus futuros projetos serão criados automaticamente.\n');
+
+  const defaultProjectsDir = path.join(os.homedir(), 'Documents', 'Projetos');
+  const projectsDir = await ask('? Onde deseja salvar todos os seus projetos?', defaultProjectsDir);
+  
+  if (!fs.existsSync(projectsDir)) {
+    fs.mkdirSync(projectsDir, { recursive: true });
+  }
+  
+  // Detecção Automática e Silenciosa do Toolkit
+  const toolkitPath = path.resolve(__dirname, '../29-toolkit/.agent');
+  
+  if (!fs.existsSync(toolkitPath)) {
+    console.error(`\n❌ Erro Crítico: Pasta do toolkit não encontrada em: ${toolkitPath}`);
+    console.log('Certifique-se de que a pasta 29-toolkit/.agent existe na raiz do toolkit.');
+    process.exit(1);
+  }
+
+  const config = { 
+    projectsDir, 
+    toolkitPath, 
+    setupDate: new Date().toISOString() 
+  };
+
   fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
+  
+  console.log('\n✅ Configuração salva com sucesso!');
+  console.log(`💡 Dica: Para mudar estas configurações futuramente, apague o arquivo:`);
+  console.log(`   ${configPath}\n`);
+
   return config;
 }
+
 
 // Função de cópia robusta (sem dependências)
 function copyFolderSync(from, to) {
