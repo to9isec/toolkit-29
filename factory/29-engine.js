@@ -71,7 +71,9 @@ async function ensureConfig() {
   console.log('ℹ️  Esta configuração será feita apenas uma vez. Ela define onde todos');
   console.log('   os seus futuros projetos serão criados automaticamente.\n');
 
-  const defaultProjectsDir = path.join(os.homedir(), 'Documents', 'Projetos');
+  const home = os.homedir();
+  const docsName = fs.existsSync(path.join(home, 'Documentos')) ? 'Documentos' : 'Documents';
+  const defaultProjectsDir = path.join(home, docsName, 'Projetos');
   const projectsDir = await ask('? Onde deseja salvar todos os seus projetos?', defaultProjectsDir);
   
   if (!fs.existsSync(projectsDir)) {
