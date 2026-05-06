@@ -17,16 +17,23 @@ async function startIngestor() {
 
   const inboxDir = path.join(process.cwd(), 'factory', 'inbox', 'design');
   
-  console.log(`📂 Procurando em: ${inboxDir}`);
-
-  // DIAGNÓSTICO PROFUNDO
-  if (fs.existsSync(inboxDir)) {
-    const allFiles = fs.readdirSync(inboxDir);
-    console.log(`📦 Arquivos encontrados na pasta (${allFiles.length}):`);
-    allFiles.forEach(f => console.log(`   - ${f}`));
-  } else {
-    console.log('❌ Erro: A pasta de entrada não foi encontrada fisicamente.');
+  // DIAGNÓSTICO E PROTEÇÃO
+  if (!fs.existsSync(inboxDir)) {
+    console.log('\n❌ ERRO: Pasta de importação não encontrada.');
+    console.log('--------------------------------------------------');
+    console.log('💡 Você parece estar tentando rodar o comando fora de um projeto.');
+    console.log('Para usar o Design Ingestor:');
+    console.log('1. Crie um projeto novo usando: 29-init');
+    console.log('2. Entre na pasta do projeto criado.');
+    console.log('3. Coloque o ZIP em factory/inbox/design/');
+    console.log('4. Rode 29-import novamente.');
+    console.log('--------------------------------------------------\n');
+    return;
   }
+
+  const allFiles = fs.readdirSync(inboxDir);
+  console.log(`📦 Arquivos encontrados na pasta (${allFiles.length}):`);
+  allFiles.forEach(f => console.log(`   - ${f}`));
 
   // Busca insensível a maiúsculas (.zip ou .ZIP)
   const files = fs.readdirSync(inboxDir).filter(f => f.toLowerCase().endsWith('.zip'));
