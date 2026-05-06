@@ -17,12 +17,15 @@ async function startIngestor() {
 
   const inboxDir = path.join(process.cwd(), 'factory', 'inbox', 'design');
   
+  console.log(`📂 Procurando em: ${inboxDir}`);
+
   // Garantir que a pasta existe
   if (!fs.existsSync(inboxDir)) {
     fs.mkdirSync(inboxDir, { recursive: true });
   }
 
-  const files = fs.readdirSync(inboxDir).filter(f => f.endsWith('.zip'));
+  // Busca insensível a maiúsculas (.zip ou .ZIP)
+  const files = fs.readdirSync(inboxDir).filter(f => f.toLowerCase().endsWith('.zip'));
 
   if (files.length === 0) {
     console.log('🟡 Nenhuns arquivos .zip encontrados em factory/inbox/design/');
