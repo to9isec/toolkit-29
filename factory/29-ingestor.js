@@ -19,9 +19,13 @@ async function startIngestor() {
   
   console.log(`📂 Procurando em: ${inboxDir}`);
 
-  // Garantir que a pasta existe
-  if (!fs.existsSync(inboxDir)) {
-    fs.mkdirSync(inboxDir, { recursive: true });
+  // DIAGNÓSTICO PROFUNDO
+  if (fs.existsSync(inboxDir)) {
+    const allFiles = fs.readdirSync(inboxDir);
+    console.log(`📦 Arquivos encontrados na pasta (${allFiles.length}):`);
+    allFiles.forEach(f => console.log(`   - ${f}`));
+  } else {
+    console.log('❌ Erro: A pasta de entrada não foi encontrada fisicamente.');
   }
 
   // Busca insensível a maiúsculas (.zip ou .ZIP)
