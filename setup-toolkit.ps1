@@ -53,8 +53,19 @@ function $Name {
 }
 
 # Adicionando os comandos
-Add-ToolkitFunction -Name "29-init" -ScriptBlock "node `"$EnginePath`" `$args"
-Add-ToolkitFunction -Name "29-toolkit" -ScriptBlock "Set-Location `"$BaseDir\29-toolkit`""
+# Usamos caminhos relativos à Home se possível para maior portabilidade
+$DisplayEnginePath = $EnginePath
+if ($EnginePath.StartsWith($HOME)) {
+    $DisplayEnginePath = "~" + $EnginePath.Substring($HOME.Length)
+}
+
+$DisplayBaseDir = $BaseDir
+if ($BaseDir.StartsWith($HOME)) {
+    $DisplayBaseDir = "~" + $BaseDir.Substring($HOME.Length)
+}
+
+Add-ToolkitFunction -Name "29-init" -ScriptBlock "node `"$DisplayEnginePath`" `$args"
+Add-ToolkitFunction -Name "29-toolkit" -ScriptBlock "Set-Location `"$DisplayBaseDir\29-toolkit`""
 
 Write-Host "`n✅ Setup concluído com sucesso!" -ForegroundColor Green
 Write-Host "--------------------------------------------------" -ForegroundColor Gray

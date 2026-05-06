@@ -31,25 +31,38 @@ chmod +x "$ENGINE_PATH"
 # Detectar shell de forma mais robusta
 if [ -f "$HOME/.zshrc" ]; then
     SHELL_RC="$HOME/.zshrc"
+    SHELL_RC_DISPLAY="~/.zshrc"
 else
     SHELL_RC="$HOME/.bashrc"
+    SHELL_RC_DISPLAY="~/.bashrc"
 fi
 
-echo "🐚 Shell detectado: $SHELL_RC"
+echo "🐚 Shell detectado: $SHELL_RC_DISPLAY"
 
 # Função para adicionar ou atualizar alias (Compatível com POSIX)
 update_alias() {
     name=$1
     cmd=$2
+    
+    # Tornar o comando genérico se estiver dentro da home
+    case "$cmd" in
+        "$HOME"*)
+            cmd_display="~${cmd#$HOME}"
+            ;;
+        *)
+            cmd_display="$cmd"
+            ;;
+    esac
+
     if ! grep -q "alias $name=" "$SHELL_RC" 2>/dev/null; then
-        echo "alias $name='$cmd'" >> "$SHELL_RC"
+        echo "alias $name='$cmd_display'" >> "$SHELL_RC"
         echo "✅ Alias '$name' adicionado."
     else
         # Detecta OS para o SED correto
         if [ "$(uname)" = "Darwin" ]; then
-            sed -i '' "s|alias $name=.*|alias $name='$cmd'|g" "$SHELL_RC"
+            sed -i '' "s|alias $name=.*|alias $name='$cmd_display'|g" "$SHELL_RC"
         else
-            sed -i "s|alias $name=.*|alias $name='$cmd'|g" "$SHELL_RC"
+            sed -i "s|alias $name=.*|alias $name='$cmd_display'|g" "$SHELL_RC"
         fi
         echo "🟡 Alias '$name' atualizado."
     fi
@@ -63,7 +76,7 @@ echo "✅ Setup concluído com sucesso!"
 echo "--------------------------------------------------"
 echo "💡 IMPORTANTE: Para usar os comandos '29-init' de qualquer"
 echo "lugar no futuro, você precisará rodar:"
-echo "source $SHELL_RC"
+echo "source $SHELL_RC_DISPLAY"
 echo "ou simplesmente abrir um novo terminal."
 echo "--------------------------------------------------"
 echo ""

@@ -51,8 +51,18 @@ function slugify(text) {
 }
 
 async function ensureConfig() {
+  // Detecção Automática e Silenciosa do Toolkit (Sempre calculada em tempo de execução)
+  const currentToolkitPath = path.resolve(__dirname, '../29-toolkit/.agent');
+
   if (fs.existsSync(configPath)) {
     const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+    
+    // Auto-reparo: Se o caminho salvo não existir mais ou estiver diferente, atualiza
+    if (!fs.existsSync(config.toolkitPath) || config.toolkitPath !== currentToolkitPath) {
+      config.toolkitPath = currentToolkitPath;
+      fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
+    }
+
     console.log(`\n📁 Diretório mestre de projetos: ${config.projectsDir}`);
     return config;
   }
