@@ -47,6 +47,7 @@ Abra o terminal na pasta do Toolkit e rode o comando conforme seu sistema:
 1.  **Verifica Pré-requisitos:** Valida se o Node.js está instalado.
 2.  **Cria Comandos Globais:** Registra `29-init` e `29-toolkit` no seu sistema.
 3.  **Auto-Start:** Oferece para criar seu primeiro projeto imediatamente.
+4.  **Portabilidade Total:** O Toolkit detecta automaticamente se foi movido para uma nova pasta e se auto-ajusta.
 
 ---
 

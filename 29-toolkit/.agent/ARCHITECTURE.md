@@ -21,7 +21,7 @@ This toolkit is provided as a technical aid for scaffolding and architectural gu
 ## 🏗️ Directory Structure
 
 ```plaintext
-29-toolkit/ (OneDrive Master Location)
+29-toolkit/ (Local de Instalação)
 └── .agent/
     ├── ARCHITECTURE.md          # This file (Master Copy)
     ├── agents/                  # 20 Specialist Agents
@@ -279,7 +279,7 @@ For details, see [scripts/README.md](scripts/README.md)
 | **Total Workflows** | 12 |
 | **Total Scripts** | 2 (master) + 18 (skill-level) |
 | **Coverage** | ~95% web/mobile development |
-| **Sync Type** | Global Symlink (OneDrive) |
+| **Sync Type** | Global Symlink / Local Copy |
 
 ---
 
