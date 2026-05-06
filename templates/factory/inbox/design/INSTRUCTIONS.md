@@ -8,7 +8,7 @@ Esta pasta é o local onde você deve colocar os seus arquivos de design para qu
 2.  **Mova para cá:** Arraste e solte o arquivo `.zip` dentro desta pasta (`design/`).
 3.  **Inicie o Motor:** Abra o seu terminal na pasta raiz deste projeto e digite:
     ```bash
-    npm run import-design
+    29-import
     ```
 4.  **Aguarde a Análise:** O sistema vai abrir o ZIP, identificar a tecnologia e preparar os módulos.
 

@@ -10,6 +10,12 @@ ENGINE_PATH="$BASE_DIR/factory/29-engine.js"
 echo "🚀 Iniciando setup do Toolkit-29..."
 echo "📍 Caminho detectado: $BASE_DIR"
 
+# 0. INSTALAÇÃO DE DEPENDÊNCIAS
+if [ -f "$BASE_DIR/package.json" ]; then
+    echo "📦 Instalando motores internos..."
+    (cd "$BASE_DIR" && npm install --silent)
+fi
+
 # 1. VERIFICAÇÃO DE PRÉ-REQUISITOS (NODE.JS)
 if ! command -v node >/dev/null 2>&1; then
     echo ""
@@ -70,6 +76,7 @@ update_alias() {
 
 update_alias "29-init" "node $ENGINE_PATH"
 update_alias "29-toolkit" "cd $BASE_DIR/29-toolkit"
+update_alias "29-import" "node $BASE_DIR/factory/29-ingestor.js"
 
 echo ""
 echo "✅ Setup concluído com sucesso!"

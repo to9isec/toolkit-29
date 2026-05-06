@@ -9,6 +9,14 @@ $EnginePath = Join-Path $BaseDir "factory\29-engine.js"
 Write-Host "`n🚀 Iniciando setup do Toolkit-29..." -ForegroundColor Cyan
 Write-Host "📍 Caminho detectado: $BaseDir"
 
+# 0. INSTALAÇÃO DE DEPENDÊNCIAS
+if (Test-Path "$BaseDir\package.json") {
+    Write-Host "📦 Instalando motores internos..." -ForegroundColor Gray
+    Push-Location $BaseDir
+    npm install --silent
+    Pop-Location
+}
+
 # 1. VERIFICAÇÃO DE PRÉ-REQUISITOS (NODE.JS)
 if (!(Get-Command node -ErrorAction SilentlyContinue)) {
     Write-Host "`n❌ ERRO: Node.js não encontrado!" -ForegroundColor Red
@@ -66,6 +74,7 @@ if ($BaseDir.StartsWith($HOME)) {
 
 Add-ToolkitFunction -Name "29-init" -ScriptBlock "node `"$DisplayEnginePath`" `$args"
 Add-ToolkitFunction -Name "29-toolkit" -ScriptBlock "Set-Location `"$DisplayBaseDir\29-toolkit`""
+Add-ToolkitFunction -Name "29-import" -ScriptBlock "node `"$DisplayBaseDir\factory\29-ingestor.js`""
 
 Write-Host "`n✅ Setup concluído com sucesso!" -ForegroundColor Green
 Write-Host "--------------------------------------------------" -ForegroundColor Gray
