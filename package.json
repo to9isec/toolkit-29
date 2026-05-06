@@ -7,11 +7,14 @@
     "29-init": "./factory/29-engine.js"
   },
   "scripts": {
-    "start": "node factory/29-engine.js"
+    "start": "node factory/29-engine.js",
+    "import-design": "node factory/29-ingestor.js"
   },
   "author": "29",
   "license": "Custom (Non-Commercial)",
-  "dependencies": {},
+  "dependencies": {
+    "adm-zip": "^0.5.12"
+  },
   "devDependencies": {},
   "engines": {
     "node": ">=16.0.0"

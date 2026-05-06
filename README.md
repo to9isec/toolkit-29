@@ -62,7 +62,22 @@ Após a instalação, você pode usar estes comandos de **qualquer lugar**:
 
 ---
 
-## 🆘 4. Resolução de Problemas (Troubleshooting)
+## 🎨 4. Como Importar um Design (Stitch, OpenDesign, etc.)
+
+Se você já tem um desenho/layout pronto (arquivo `.zip`), você pode transformá-lo em um projeto real automaticamente:
+
+1.  **Crie o seu Projeto:** Use o comando `29-init` para criar a base.
+2.  **Copie o seu Arquivo:** Pegue o arquivo `.zip` do seu design e coloque-o dentro da pasta:
+    `seu-projeto/factory/inbox/design/`
+3.  **Execute o Processamento:** No terminal, entre na pasta do seu projeto e rode:
+    ```bash
+    npm run import-design
+    ```
+4.  **Acompanhe a Mágica:** O Toolkit-29 vai extrair os arquivos, analisar a tecnologia e começar a organizar tudo em módulos seguros (Silos).
+
+---
+
+## 🆘 5. Resolução de Problemas (Troubleshooting)
 
 ### **Mac / Linux**
 *   **Erro de Permissão:** Se ao rodar `./setup-toolkit.sh` der "Permission Denied", use o comando `sh setup-toolkit.sh`.
