@@ -4,7 +4,8 @@
   "description": "O Framework para criação de projetos, apoiando com Governança, Arquitetura de Software e Inteligência Artificial.",
   "main": "factory/29-engine.js",
   "bin": {
-    "29-init": "./factory/29-engine.js"
+    "29-init": "./factory/29-engine.js",
+    "29-import": "./factory/29-ingestor.js"
   },
   "scripts": {
     "start": "node factory/29-engine.js",
